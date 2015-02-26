@@ -1,0 +1,5 @@
+/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/classes/debug
+/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-aa0824ddbd9238b3ef193b9505c4ffbb2cbb2305.jar
+/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-15e99b12e82269b23af3e5e664d578a1d809eebd.jar
+/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/classes-0350babe4b930350b88e33a7d3dc8d6cdb4ef9ec.jar
+/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/classes-619c4d49039cbaa63264ab86861596169fb17f45.jar

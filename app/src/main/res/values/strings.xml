@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WVU Mobile</string>
+    <string name="title_section1">HOME</string>
+    <string name="title_section2">DINING</string>
+    <string name="title_section3">PRT</string>
+    <string name="title_section4">BUSES</string>
+    <string name="title_section5">MAP</string>
+    <string name="title_section6">SPORTS</string>
+    <string name="title_section7">NEWS</string>
+    <string name="title_section8">EVENTS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="online">O N L I N E</string>
+    <string name="yield">Y I E L D</string>
+    <string name="offline">O F F L I N E</string>
+    <string name="PRT_normal">The PRT is running on a \n normal schedule.</string>
+    <string name="PRT_hours">Monday to Friday 6:30 AM to 10:15PM\n Saturday 9:30 AM to 5PM\n Sunday CLOSED</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#023462</color>
+    <color name="ColorPrimaryDark">#001528</color>
+    <color name="ColorGold">#EBD38C</color>
+    <color name="ColorGrey">#D9D9D9</color>
+    <color name="ColorGreen">#B3D694</color>
+    <color name="ColorOrange">#DF9403</color>
+    <color name="ColorPink">#FEA094</color>
+    <color name="ColorPRTGray1">#575757</color>
+    <color name="ColorPRTgray2">#cbcbcb</color>
+    <color name="ColorPRTGray3">#a2a2a2</color>
+    <color name="GoldColor">#EBD38C</color>
+    <color name="DarkBlueColor">#023462</color>
+    <color name="Default">#EBD38C</color>
+
+</resources>
