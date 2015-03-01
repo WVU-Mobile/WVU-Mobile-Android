@@ -1,10 +1,14 @@
-<ListView
+
+<ListView android:id="@+id/left_drawer"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LightFont.grey"
-    android:layout_width="match_parent"
+    android:layout_width="320dp"
     android:layout_height="match_parent"
+    android:layout_gravity="start"
     android:choiceMode="singleChoice"
     android:divider="@android:color/transparent"
     android:dividerHeight="0dp"
-    tools:context=".NavigationDrawerFragment"/>
+    tools:context=".NavigationDrawerFragment"
+    android:background="@color/DarkBlueColor"
+    android:listSelector="@drawable/list_item_selector"/>
