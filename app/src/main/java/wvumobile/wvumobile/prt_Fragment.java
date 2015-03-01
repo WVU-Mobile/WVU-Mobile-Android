@@ -43,6 +43,9 @@ public class prt_Fragment extends Fragment
         JSONObject prtJSON = jParse.getJSONFromUrl(url);
         rootview = inflater.inflate(R.layout.prt_layout, container, false);
 
+        System.out.println("Uhh debug");
+
+
         try
         {
             switch(prtJSON.getInt("status"))
@@ -50,14 +53,16 @@ public class prt_Fragment extends Fragment
                 case 1:
                     // PRT is online
                    // statusImageView = (ImageView) findViewById(R.id.prt_status_image);
+                    System.out.println("prt online");
 
                     break;
                 case 2: case 5: case 6: case 10:
                     // PRT is closed
+                    System.out.println("prt half offline");
                     break;
                 case 4: case 8: case 9:
-                    //PRT is down
-                    break;
+                    System.out.println("prt down");
+                break;
                 default:
                     //default: PRT is online
                     break;
