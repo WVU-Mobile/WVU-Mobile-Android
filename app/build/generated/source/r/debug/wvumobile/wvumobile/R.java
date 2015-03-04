@@ -1479,15 +1479,16 @@ containing a value of this type.
         public static final int navigation_drawer_open=0x7f0a0016;
         public static final int offline=0x7f0a0017;
         public static final int online=0x7f0a0018;
-        public static final int title_section1=0x7f0a0019;
-        public static final int title_section2=0x7f0a001a;
-        public static final int title_section3=0x7f0a001b;
-        public static final int title_section4=0x7f0a001c;
-        public static final int title_section5=0x7f0a001d;
-        public static final int title_section6=0x7f0a001e;
-        public static final int title_section7=0x7f0a001f;
-        public static final int title_section8=0x7f0a0020;
-        public static final int yield=0x7f0a0021;
+        public static final int status=0x7f0a0019;
+        public static final int title_section1=0x7f0a001a;
+        public static final int title_section2=0x7f0a001b;
+        public static final int title_section3=0x7f0a001c;
+        public static final int title_section4=0x7f0a001d;
+        public static final int title_section5=0x7f0a001e;
+        public static final int title_section6=0x7f0a001f;
+        public static final int title_section7=0x7f0a0020;
+        public static final int title_section8=0x7f0a0021;
+        public static final int yield=0x7f0a0022;
     }
     public static final class style {
         public static final int AppTheme=0x7f0b0000;

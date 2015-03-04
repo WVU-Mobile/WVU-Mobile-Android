@@ -18,5 +18,6 @@
     <string name="yield">Y I E L D</string>
     <string name="offline">O F F L I N E</string>
     <string name="PRT_normal">The PRT is running on a \n normal schedule.</string>
+    <string name="status"></string>
     <string name="PRT_hours">Monday to Friday 6:30 AM to 10:15PM\n Saturday 9:30 AM to 5PM\n Sunday CLOSED</string>
 </resources>
