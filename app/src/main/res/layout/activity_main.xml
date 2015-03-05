@@ -27,6 +27,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:name="wvumobile.wvumobile.NavigationDrawerFragment"
-        tools:layout="@layout/fragment_navigation_drawer" />
+        tools:layout="@layout/fragment_navigation_drawer"
+        android:listSelector="@drawable/list_item_selector"
+        />
 
 </android.support.v4.widget.DrawerLayout>

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.graphics.*;
 import android.os.StrictMode;
 import android.widget.ImageView;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import org.apache.http.*;
@@ -24,6 +25,8 @@ import java.io.*;
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
+
+import android.graphics.drawable.*;
 
 /**
  * Created by jeremydole on 2/4/15.
@@ -46,27 +49,35 @@ public class prt_Fragment extends Fragment
 
         try
         {
-            TextView tv = (TextView) rootview.findViewById(R.id.prt_status_text);
+            TextView status = (TextView) rootview.findViewById(R.id.prt_status_text);
+            TextView message = (TextView) rootview.findViewById(R.id.prt_schedule_text);
+            message.setText(prtJSON.getString("message"));
+            ImageView img = (ImageView) rootview.findViewById(R.id.prt_status_image);
+            TableRow row = (TableRow) rootview.findViewById(R.id.prt_Img_background);
+
             switch(prtJSON.getInt("status"))
             {
                 case 1:
-                    // PRT is online
-                   // statusImageView = (ImageView) findViewById(R.id.prt_status_image);
                     System.out.println("prt online");
-                    tv.setText("prt online");
-
+                    status.setText("O N L I N E");
+                    Drawable check = getResources().getDrawable(R.drawable.check);
+                    img.setImageDrawable(check);
+                    row.setBackgroundColor(getResources().getColor(R.color.ColorGreen));
                     break;
                 case 2: case 5: case 6: case 10:
-                    // PRT is closed
-                    System.out.println("prt half offline");
-                    tv.setText("prt half offline");
-                    break;
+                    status.setText("W A R N I N G");
+                    Drawable yield = getResources().getDrawable(R.drawable.yield);
+                    img.setImageDrawable(yield);
+                    row.setBackgroundColor(getResources().getColor(R.color.ColorOrange));
+
+                break;
                 case 4: case 8: case 9:
-                    System.out.println("prt down");
-                    tv.setText("prt down");
+                    status.setText("O F F L I N E");
+                    Drawable stop = getResources().getDrawable(R.drawable.stop);
+                    img.setImageDrawable(stop);
+                    row.setBackgroundColor(getResources().getColor(R.color.ColorPink));
                 break;
                 default:
-                    //default: PRT is online
                     break;
 
 
