@@ -42,7 +42,7 @@
         </TableRow>
 
         <TableRow
-            android:background="@color/DarkBlueColor"
+            android:background="@color/DarkestBlueColor"
             android:layout_width="0px"
             android:layout_height="0px"
 
