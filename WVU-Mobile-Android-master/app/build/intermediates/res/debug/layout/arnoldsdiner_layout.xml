@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/arnolds_Diner_Menu_view"
+        android:isScrollContainer="true">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AD_menu_info_row"
+            android:layout_weight="0">
+
+            <Button
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="M E N U"
+                android:id="@+id/AD_menu_button_text"
+                android:textColor="@color/ColorWhite"
+                android:background="@color/ColorPRTgray2"
+                android:layout_weight="1" />
+            <Button
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="I N F O"
+                android:id="@+id/AD_info_button_text"
+                android:textColor="@color/ColorWhite"
+                android:background="@color/ColorPRTGray1"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1" />
+
+        </TableRow>
+    </TableLayout>
+</ScrollView><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/arnoldsdiner_layout.xml -->

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/diningMain_view"
+        android:isScrollContainer="true">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/DarkBlueColor"
+                android:id="@+id/diningHall_text"
+                android:layout_weight="0">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="DINING HALLS"
+                    android:id="@+id/dh_text"
+                    android:textColor="@color/ColorGold"
+                    android:background="@color/DarkBlueColor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_CafeEvansdale"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true"
+                android:nestedScrollingEnabled="false">
+
+                <ImageView
+                    android:id="@+id/cafeevansdaleimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cafe Evansdale"
+                    android:id="@+id/textView2"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_SummitCafe"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/summitcafeimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summit Cafe"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_ArnoldsDiner"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/arnoldsdinerimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arnold's Diner"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_BoremanBistro"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/boremanbistroimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boreman Bistro"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_TerraceRoom"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/terraceroomimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terrace Room"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"/>
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_Hatfields"
+                android:layout_weight="2"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/hatfieldsimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hatfields"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retailLocations_text"
+                android:layout_weight="0"
+                android:background="@color/DarkBlueColor"
+                android:clickable="true">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="RETAIL LOCATIONS"
+                    android:id="@+id/retail_text"
+                    android:textColor="@color/ColorGold"
+                    android:background="@color/DarkBlueColor" />
+
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_BurgerKing"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/burgerkingimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burger King"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_chickfila"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/chickfilaimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chick-Fil-A"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_BitsandBytes"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/bitsandbytesimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bits and Bytes"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_daVincis"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/davincisimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="da Vinci's"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_BrewnGoldCafe"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/brewngoldimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brew N Gold Cafe"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_Cavanaughs"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/cavanaughsimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cavanaugh's"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_Elizas"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/elizasimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eliza's"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_GreenhouseCafe"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/greenhousecafeimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Greenhouse: An EatWell Cafe"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_SaikoSushi"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/saikosushimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saiko sushi"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_LyonsDen"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/lyonsdenimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lyons Den"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_WaterfrontCafe"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/waterfrontcafeimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waterfront Cafe"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_Sbarro"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/sbarroimage"
+                    android:src="@drawable/boreman"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sbarro"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_Tazikis"
+                android:background="@color/DarkestBlueColor"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/tazikisimage"
+                    android:src="@drawable/evansdale"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tazikis"
+                    android:textColor="@color/ColorGold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical" />
+                </TableRow>
+    </TableLayout>
+</ScrollView><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/dining_layout.xml -->
