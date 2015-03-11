@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    android:id="@+id/prt_view">
+
+
+        <TableRow
+            android:background="@color/ColorGreen"
+            android:layout_height="0px"
+            android:layout_width="0px"
+            android:layout_weight="0"
+            android:gravity="center_vertical|top"
+            android:id="@+id/prt_Img_background">
+            <ImageView
+                android:id="@+id/prt_status_image"
+                android:src="@drawable/check"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="0"
+                android:cropToPadding="true"
+                android:maxHeight="10dp"
+                android:maxWidth="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/ColorPRTGray1"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:id="@+id/prt_status_background">
+            <TextView
+                android:text="@string/online"
+                android:textColor="@color/ColorGreen"
+                android:textSize="37sp"
+                android:textStyle="bold"
+                android:paddingTop="3dip"
+                android:gravity="center"
+                android:id="@+id/prt_status_text" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="@color/DarkestBlueColor"
+            android:layout_width="0px"
+            android:layout_height="0px"
+
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:id="@+id/prt_schedule_background">
+            <TextView
+                android:text="@string/status"
+                android:textColor="@color/ColorGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:id="@+id/prt_schedule_text" />
+        </TableRow>
+        <TableRow
+            android:background="@color/ColorPrimaryDark"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="2.1"
+            android:gravity="center"
+            android:id="@+id/prt_hours_background">
+            <TextView
+                android:text="@string/PRT_hours"
+                android:textColor="@color/ColorGold"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/prt_hours_text" />
+        </TableRow>
+    </TableLayout>
