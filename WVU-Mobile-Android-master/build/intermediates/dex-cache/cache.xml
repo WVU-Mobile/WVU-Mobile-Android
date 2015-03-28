@@ -29,5 +29,12 @@
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/classes-619c4d49039cbaa63264ab86861596169fb17f45.jar" />
     </item>
+    <item
+        jar="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/classes-68f6f49ed7dce7bfeaf3502edc1fa05a9eafae7e.jar" />
+    </item>
 
 </items>

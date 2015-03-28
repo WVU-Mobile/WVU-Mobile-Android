@@ -1,5 +1,7 @@
 package wvumobile.wvumobile;
 
+import android.content.Intent;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
@@ -24,6 +26,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
+
+import java.net.URISyntaxException;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
@@ -70,14 +74,24 @@ public class NavigationDrawerFragment extends Fragment {
 
         // Read in the flag indicating whether or not the user has demonstrated awareness of the
         // drawer. See PREF_USER_LEARNED_DRAWER for details.
+        //String check = savedInstanceState.getString("Check");
+
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
         mUserLearnedDrawer = sp.getBoolean(PREF_USER_LEARNED_DRAWER, false);
 
+        Intent intent = getActivity().getIntent();
+        if(intent != null) {
+            String key = intent.getStringExtra(DiningActivity.BACK_MESSAGE);
+            if(key != null) {
+                if (key.equals("Check")) {
+                    mCurrentSelectedPosition = 1;
+                }
+            }
+        }
         if (savedInstanceState != null) {
             mCurrentSelectedPosition = savedInstanceState.getInt(STATE_SELECTED_POSITION);
             mFromSavedInstanceState = true;
         }
-
         // Select either the default item (0) or the last selected item.
         selectItem(mCurrentSelectedPosition);
     }
@@ -226,7 +240,9 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        System.out.println(mCurrentSelectedPosition);
         outState.putInt(STATE_SELECTED_POSITION, mCurrentSelectedPosition);
+        outState.putString("Check", "1");
     }
 
     @Override
@@ -282,5 +298,9 @@ public class NavigationDrawerFragment extends Fragment {
          * Called when an item in the navigation drawer is selected.
          */
         void onNavigationDrawerItemSelected(int position);
+    }
+    public void setSelectedItem(int item)
+    {
+        mCurrentSelectedPosition = item;
     }
 }

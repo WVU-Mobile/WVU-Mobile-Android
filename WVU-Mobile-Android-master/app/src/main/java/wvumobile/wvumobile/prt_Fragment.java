@@ -58,14 +58,15 @@ public class prt_Fragment extends Fragment
             switch(prtJSON.getInt("status"))
             {
                 case 1:
-                    System.out.println("prt online");
                     status.setText("O N L I N E");
+                    status.setTextColor(getResources().getColor(R.color.ColorGreen));
                     Drawable check = getResources().getDrawable(R.drawable.check);
                     img.setImageDrawable(check);
                     row.setBackgroundColor(getResources().getColor(R.color.ColorGreen));
                     break;
                 case 2: case 5: case 6: case 10:
                     status.setText("W A R N I N G");
+                    status.setTextColor(getResources().getColor(R.color.ColorOrange));
                     Drawable yield = getResources().getDrawable(R.drawable.yield);
                     img.setImageDrawable(yield);
                     row.setBackgroundColor(getResources().getColor(R.color.ColorOrange));
@@ -73,6 +74,7 @@ public class prt_Fragment extends Fragment
                 break;
                 case 4: case 8: case 9:
                     status.setText("O F F L I N E");
+                    status.setTextColor(getResources().getColor(R.color.ColorPink));
                     Drawable stop = getResources().getDrawable(R.drawable.stop);
                     img.setImageDrawable(stop);
                     row.setBackgroundColor(getResources().getColor(R.color.ColorPink));

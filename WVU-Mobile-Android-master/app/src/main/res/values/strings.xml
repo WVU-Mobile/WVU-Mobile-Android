@@ -21,4 +21,9 @@
     <string name="status"></string>
     <string name="PRT_hours">Monday to Friday 6:30 AM to 10:15PM\n Saturday 9:30 AM to 5PM\n Sunday CLOSED</string>
     <string name="MenuPlaceholder">CONTENT\nNOT\nAVAILABLE\nAT THIS\nTIME</string>
+    <string name="title_activity_dining">Dining</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

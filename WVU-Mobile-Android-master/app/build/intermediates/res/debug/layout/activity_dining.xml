@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:scrollbars="none"
+android:layout_weight="1"
+android:nestedScrollingEnabled="true"
+android:background="@color/DarkestBlueColor"
+tools:context="wvumobile.wvumobile.DiningActivity">
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/diningButton_view"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="true"
+    android:clickable="false"
+    android:background="@color/DarkestBlueColor"
+    android:stretchColumns="1">
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CE_menu_info_row"
+        android:nestedScrollingEnabled="true">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="M E N U"
+            android:id="@+id/CE_menu_button_text"
+            android:textColor="@color/ColorWhite"
+            android:background="@color/ColorPRTGray2"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I N F O"
+            android:id="@+id/CE_info_button_text"
+            android:textColor="@color/ColorWhite"
+            android:background="@color/ColorPRTGray1"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_breakfasttitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="BREAKFAST"
+            android:textColor="@color/ColorGold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_breakfast">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_breakfast"
+            android:layout_span="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_hbreakfasttitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HEALTHY 'U' BREAKFAST"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_hbreakfast">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_hbreakfast" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_breakfast_astitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="BREAKFAST ACTION STATION"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_breakfast_as">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_breakfast_as" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_lunchtitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="LUNCH"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_lunch">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_lunch" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_hlunchtitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HEALTHY 'U' LUNCH"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_hlunch">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_hlunch" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_lunch_astitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="LUNCH ACTION STATION"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_lunch_as">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_lunch_as" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_dinnertitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DINNER"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_dinner">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_dinner" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:transitionGroup="false"
+        android:id="@+id/r_hdinnertitle">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HEALTH 'U' DINNER"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_hdinner">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_hdinner" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlueColor"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/r_dinner_astitle"
+        android:longClickable="true">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DINNER ACTION STATION"
+            android:textColor="@color/ColorGold"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/r_dinner_as">
+
+        <TextView
+            android:text="@string/MenuPlaceholder"
+            android:textColor="@color/ColorGold"
+            android:id="@+id/d_dinner_as" />
+
+    </TableRow>
+</TableLayout>
+</ScrollView><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/activity_dining.xml -->

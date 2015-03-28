@@ -1,0 +1,14 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+    <fragment
+        android:id="@+id/map_campus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+    </TableRow>
+</TableLayout>
+<!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/activity_map.xml -->

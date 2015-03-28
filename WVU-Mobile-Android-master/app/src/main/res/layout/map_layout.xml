@@ -1,14 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:clickable="true"
-    android:gravity="center_horizontal"
-    android:background="@color/ColorGold">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    android:nestedScrollingEnabled="true"
+    android:background="@color/DarkestBlueColor">
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
 
-    <TextView
+    <TableRow
+        android:id="@+id/mapMenuRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="M A P"
+            android:id="@+id/map_mapButton"
+            android:textColor="@color/ColorWhite"
+            android:background="@color/ColorPRTGray2"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="B U I L D I N G S"
+            android:id="@+id/map_buildingButton"
+            android:textColor="@color/ColorWhite"
+            android:background="@color/ColorPRTGray1"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/mapRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/WVUmap"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/locationTitles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Map"
-        android:id="@+id/textView" />
-</RelativeLayout>
+        android:background="@color/DarkBlueColor"
+        android:layout_weight="0">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="\nBUILDING LOCATIONS\n"
+            android:id="@+id/dh_text"
+            android:textColor="@color/ColorGold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
+        android:id="@+id/AEL">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nAERODYNAMICS LABORATORY\n"
+            android:textColor="@color/ColorGold" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nAEL\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
+        android:id="@+id/AGS">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nAGRILCULTURAL SCIENCES BUILDING\n"
+            android:textColor="@color/ColorGold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nAGS\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
+        android:id="@+id/ALH">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nALLEN HALL\n"
+            android:textColor="@color/ColorGold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nALH\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
+        android:id="@+id/ARH">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nARNOLD HALL\n"
+            android:textColor="@color/ColorGold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nARH\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
+        android:id="@+id/ARM">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nARMSTRONG HALL\n"
+            android:textColor="@color/ColorGold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nARM\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
+        android:id="@+id/ARN">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nARNOLD APARTMENTS\n"
+            android:textColor="@color/ColorGold"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nARN\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+
+</TableLayout>
+</ScrollView>

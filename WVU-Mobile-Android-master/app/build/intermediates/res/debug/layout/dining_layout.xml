@@ -30,7 +30,8 @@
                 android:id="@+id/d_CafeEvansdale"
                 android:background="@color/DarkestBlueColor"
                 android:clickable="true"
-                android:nestedScrollingEnabled="false">
+                android:nestedScrollingEnabled="false"
+                android:onClick="ce_onClick">
 
                 <ImageView
                     android:id="@+id/cafeevansdaleimage"
