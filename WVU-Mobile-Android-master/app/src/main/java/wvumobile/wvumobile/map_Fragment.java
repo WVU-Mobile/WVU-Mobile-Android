@@ -123,6 +123,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
 
     public void onClick(View v)
     {
+        Marker marker;
         switch(v.getId())
         {
             case R.id.map_mapButton:
@@ -136,27 +137,87 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
                 viewBuildings();
                 break;
             case R.id.AEL:
-                mMap.addMarker(new MarkerOptions().position(new LatLng(39.645670, -79.974281)).title("Aerodynamics Laboratory"));
+                marker = mMap.addMarker(new MarkerOptions().position(new LatLng(39.645670, -79.974281)).title("Aerodynamics Laboratory"));
+                if(checkMarker(marker))
+                {
+                    AELRow.setBackgroundColor(getResources().getColor(R.color.DarkestBlueColor));
+                    marker.remove();
+                }
+                else
+                {
+                    AELRow.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray3));
+                    markers.add(marker);
+                }
                 viewMap();
                 break;
             case R.id.AGS:
-                mMap.addMarker(new MarkerOptions().position(new LatLng(39.645768,-79.969936)).title("Agricultural Sciences Building"));
+                marker = mMap.addMarker(new MarkerOptions().position(new LatLng(39.645768,-79.969936)).title("Agricultural Sciences Building"));
+                if(checkMarker(marker))
+                {
+                    AGSRow.setBackgroundColor(getResources().getColor(R.color.DarkestBlueColor));
+                    marker.remove();
+                }
+                else
+                {
+                    AGSRow.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray3));
+                    markers.add(marker);
+                }
                 viewMap();
                 break;
             case R.id.ALH:
-                mMap.addMarker(new MarkerOptions().position(new LatLng(39.646186,-79.967245)).title("Allen Hall"));
+                marker = mMap.addMarker(new MarkerOptions().position(new LatLng(39.646186,-79.967245)).title("Allen Hall"));
+                if(checkMarker(marker))
+                {
+                    ALHRow.setBackgroundColor(getResources().getColor(R.color.DarkestBlueColor));
+                    marker.remove();
+                }
+                else
+                {
+                    ALHRow.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray3));
+                    markers.add(marker);
+                }
                 viewMap();
                 break;
             case R.id.ARH:
-                mMap.addMarker(new MarkerOptions().position(new LatLng(39.632486,-79.950469)).title("Arnold Hall"));
+                marker = mMap.addMarker(new MarkerOptions().position(new LatLng(39.632486,-79.950469)).title("Arnold Hall"));
+                if(checkMarker(marker))
+                {
+                    ARHRow.setBackgroundColor(getResources().getColor(R.color.DarkestBlueColor));
+                    marker.remove();
+                }
+                else
+                {
+                    ARHRow.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray3));
+                    markers.add(marker);
+                }
                 viewMap();
                 break;
             case R.id.ARM:
-                mMap.addMarker(new MarkerOptions().position(new LatLng(39.635020,-79.955750)).title("Armstrong Hall"));
+                marker = mMap.addMarker(new MarkerOptions().position(new LatLng(39.635020,-79.955750)).title("Armstrong Hall"));
+                if(checkMarker(marker))
+                {
+                    ARMRow.setBackgroundColor(getResources().getColor(R.color.DarkestBlueColor));
+                    marker.remove();
+                }
+                else
+                {
+                    ARMRow.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray3));
+                    markers.add(marker);
+                }
                 viewMap();
                 break;
             case R.id.ARN:
-                mMap.addMarker(new MarkerOptions().position(new LatLng(39.632126,-79.950727)).title("Arnold Apartments"));
+                marker = mMap.addMarker(new MarkerOptions().position(new LatLng(39.632126,-79.950727)).title("Arnold Apartments"));
+                if(checkMarker(marker))
+                {
+                    ARNRow.setBackgroundColor(getResources().getColor(R.color.DarkestBlueColor));
+                    marker.remove();
+                }
+                else
+                {
+                    ARNRow.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray3));
+                    markers.add(marker);
+                }
                 viewMap();
                 break;
         }
@@ -188,5 +249,19 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         ARHRow.setVisibility(View.VISIBLE);
         ARMRow.setVisibility(View.VISIBLE);
         ARNRow.setVisibility(View.VISIBLE);
+    }
+    public boolean checkMarker(Marker marker)
+    {
+        boolean found = false;
+        for(int i = 0; i<markers.size();i++)
+        {
+            if(markers.get(i).getTitle().equals(marker.getTitle()))
+            {
+                markers.get(i).remove();
+                markers.remove(i);
+                found = true;
+            }
+        }
+        return found;
     }
 }

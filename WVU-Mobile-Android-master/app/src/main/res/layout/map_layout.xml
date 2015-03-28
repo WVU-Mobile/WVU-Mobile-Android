@@ -51,7 +51,7 @@
         android:layout_weight="0">
         <TextView
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="\nBUILDING LOCATIONS\n"
+            android:text="BUILDING LOCATIONS"
             android:id="@+id/dh_text"
             android:textColor="@color/ColorGold"
             android:layout_width="match_parent"
