@@ -285,6 +285,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="offline">O F F L I N E</string>
     <string name="online">O N L I N E</string>
+    <string name="registry_info">\nAll Buildings Listed \nAre Located In The \nWVU Building Registry\n\nThe Registry can be found at\nhttp://registrar.wvu.edu/building-key\n</string>
     <string name="status"/>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
     <eat-comment/>
