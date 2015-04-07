@@ -14,6 +14,7 @@
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/color.xml -->
     <eat-comment/>
+    <color name="AlphaGray">#66D9D9D9</color>
     <color name="ColorBlack">#001528</color>
     <color name="ColorBrightBlue">#007cd4</color>
     <color name="ColorGold">#EBD38C</color>
@@ -34,6 +35,7 @@
     <color name="Default">#EBD38C</color>
     <color name="GoldColor">#EBD38C</color>
     <color name="LightBlueColor">#005493</color>
+    <color name="SelectBlue">#012a52</color>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
@@ -293,16 +295,16 @@
     <string name="store_picture_title">Save image</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="title_activity_dining">Dining</string>
+    <string name="title_activity_dining"/>
     <string name="title_activity_map">MapActivity</string>
-    <string name="title_section1">HOME</string>
-    <string name="title_section2">DINING</string>
-    <string name="title_section3">PRT</string>
-    <string name="title_section4">BUSES</string>
-    <string name="title_section5">MAP</string>
-    <string name="title_section6">SPORTS</string>
-    <string name="title_section7">NEWS</string>
-    <string name="title_section8">EVENTS</string>
+    <string name="title_section1">H O M E</string>
+    <string name="title_section2">D I N I N G</string>
+    <string name="title_section3">P R T</string>
+    <string name="title_section4">B U S E S</string>
+    <string name="title_section5">M A P</string>
+    <string name="title_section6">S P O R T S</string>
+    <string name="title_section7">N E W S</string>
+    <string name="title_section8">E V E N T S</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>

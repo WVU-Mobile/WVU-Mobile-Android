@@ -27,6 +27,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     private TableRow MapRow;
     private TableRow TitleRow;
     private TableRow AELRow;
+    private TableRow AERRow;
     private TableRow AGSRow;
     private TableRow ALHRow;
     private TableRow ARHRow;
@@ -52,16 +53,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     private TableRow CS2Row;
     private TableRow CS3Row;
     private TableRow CSGRow;
-    private TableRow CP0Row;
-    private TableRow CP1Row;
-    private TableRow CP2Row;
-    private TableRow CP3Row;
-    private TableRow CP4Row;
-    private TableRow CP5Row;
-    private TableRow CP6Row;
-    private TableRow CP7Row;
-    private TableRow CP8Row;
-    private TableRow CP9Row;
     private TableRow CRLRow;
     private TableRow CRPRow;
     private TableRow CRRRow;
@@ -73,8 +64,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     private TableRow ESBRow;
     private TableRow EVLRow;
     private TableRow EXTRow;
-    private TableRow FAARow;
-    private TableRow FABRow;
     private TableRow FCHRow;
     private TableRow FH1Row;
     private TableRow FH2Row;
@@ -87,7 +76,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     private TableRow GSKRow;
     private TableRow HODRow;
     private TableRow HONRow;
-    private TableRow HSARow;
     private TableRow HSNRow;
     private TableRow HSSRow;
     private TableRow KNPRow;
@@ -100,14 +88,11 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     private TableRow MBRCRow;
     private TableRow MCARow;
     private TableRow MCBRow;
-    private TableRow MCJRow;
-    private TableRow MCKRow;
     private TableRow MECRow;
     private TableRow MHHRow;
     private TableRow MRBRow;
     private TableRow MTLRow;
     private TableRow NATRow;
-    private TableRow NDLRow;
     private TableRow NIORow;
     private TableRow NRCRow;
     private TableRow NSHRow;
@@ -121,136 +106,112 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     private TableRow SRCRow;
     private TableRow RRIRow;
     private TableRow SASRow;
-    private TableRow SLGRow;
     private TableRow SMTRow;
     private TableRow SPHRow;
     private TableRow SSCRow;
     private TableRow STARow;
     private TableRow STLRow;
-    private TableRow SUMRow;
-    private TableRow SMNRow;
     private TableRow STHRow;
-    private TableRow TMPRow;
     private TableRow USCRow;
     private TableRow VNBRow;
     private TableRow VNGRow;
     private TableRow WDBRow;
     private TableRow WHIRow;
-    private TableRow WRSRow;
     private TableRow RegistryRow;
 
     //Latitude/Longitude Objects for each building
     private LatLng AELlatlon = new LatLng(39.645670, -79.974281);
+    private LatLng AERlatlon = new LatLng(39.646064, -79.971300);
     private LatLng AGSlatlon = new LatLng(39.645768,-79.969936);
     private LatLng ALHlatlon = new LatLng(39.646186,-79.967245);
     private LatLng ARHlatlon = new LatLng(39.632486,-79.950469);
     private LatLng ARMlatlon = new LatLng(39.635020,-79.955750);
-    private LatLng ARNlatlon = new LatLng(39.632126,-79.950727);
-    private LatLng ASAlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BIClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BKHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BMRFlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BRFlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BRNlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BRSlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BRTlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BTTlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BUElatlon = new LatLng(39.645670, -79.974281);
-    private LatLng BXTlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CAClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CHIlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CKHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CLNlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng COLlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CS1latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CS2latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CS3latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CSGlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP0latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP1latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP2latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP3latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP4latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP5latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP6latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP7latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP8latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CP9latlon = new LatLng(39.645670, -79.974281);
-    private LatLng CRLlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CRPlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng CRRlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng DADlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng EIElatlon = new LatLng(39.645670, -79.974281);
-    private LatLng EMHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng ERAlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng ERBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng ESBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng EVLlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng EXTlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng FAAlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng FABlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng FCHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng FH1latlon = new LatLng(39.645670, -79.974281);
-    private LatLng FH2latlon = new LatLng(39.645670, -79.974281);
-    private LatLng FH3latlon = new LatLng(39.645670, -79.974281);
-    private LatLng FH4latlon = new LatLng(39.645670, -79.974281);
-    private LatLng FH5latlon = new LatLng(39.645670, -79.974281);
-    private LatLng FH6latlon = new LatLng(39.645670, -79.974281);
-    private LatLng FRMlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng GRHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng GSKlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng HODlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng HONlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng HSAlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng HSNlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng HSSlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng KNPlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng LIBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng LNClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng LSBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng LWClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng LYTlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MARlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MBRClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MCAlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MCBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MCJlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MCKlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MEClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MHHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng MRBlatlon = new LatLng(39.645670, -79.974281);
+    private LatLng ARNlatlon = new LatLng(39.632126,-79.950727);//
+    private LatLng ASAlatlon = new LatLng(39.646773, -79.968235);//
+    private LatLng BIClatlon = new LatLng(39.639645, -79.935943);
+    private LatLng BKHlatlon = new LatLng(39.635585, -79.956277);//
+    private LatLng BMRFlatlon = new LatLng(39.655504, -79.957020);
+    private LatLng BRFlatlon = new LatLng(39.632973, -79.952183);
+    private LatLng BRNlatlon = new LatLng(39.633550, -79.952287);
+    private LatLng BRSlatlon = new LatLng(39.633025, -79.952418);
+    private LatLng BRTlatlon = new LatLng(39.648985, -79.965791);
+    private LatLng BTTlatlon = new LatLng(39.648217, -79.967014);
+    private LatLng BUElatlon = new LatLng(39.636591, -79.954545);
+    private LatLng BXTlatlon = new LatLng(39.648432, -79.966257);
+    private LatLng CAClatlon = new LatLng(39.648136, -79.975703);
+    private LatLng CHIlatlon = new LatLng(39.636101, -79.954638);
+    private LatLng CKHlatlon = new LatLng(39.633747, -79.954364);
+    private LatLng CLNlatlon = new LatLng(39.633961, -79.955330);
+    private LatLng COLlatlon = new LatLng(39.649228, -79.981588);
+    private LatLng CS1latlon = new LatLng(39.648919, -79.964796);
+    private LatLng CS2latlon = new LatLng(39.949296, -79.964371);
+    private LatLng CS3latlon = new LatLng(39.649330, -79.964668);
+    private LatLng CSGlatlon = new LatLng(39.649070, -79.964985);
+    private LatLng CRLlatlon = new LatLng(39.633366, -79.953559);
+    private LatLng CRPlatlon = new LatLng(39.657176, -79.954237);
+    private LatLng CRRlatlon = new LatLng(39.657046, -79.955224);
+    private LatLng DADlatlon = new LatLng(39.635676, -79.952417);
+    private LatLng EIElatlon = new LatLng(39.633687, -79.956106);
+    private LatLng EMHlatlon = new LatLng(39.634949, -79.955152);
+    private LatLng ERAlatlon = new LatLng(39.648041, -79.965808);
+    private LatLng ERBlatlon = new LatLng(39.645674, -79.972463);
+    private LatLng ESBlatlon = new LatLng(39.645893, -79.973804);
+    private LatLng EVLlatlon = new LatLng(39.645244, -79.971272);
+    private LatLng EXTlatlon = new LatLng(39.650526, -79.964194);
+    private LatLng FCHlatlon = new LatLng(39.652458, -79.963139);
+    private LatLng FH1latlon = new LatLng(39.633102, -79.951462);
+    private LatLng FH2latlon = new LatLng(39.634039, -79.952016);
+    private LatLng FH3latlon = new LatLng(39.634159, -79.951871);
+    private LatLng FH4latlon = new LatLng(39.634380, -79.951776);
+    private LatLng FH5latlon = new LatLng(39.635233, -79.950493);
+    private LatLng FH6latlon = new LatLng(39.635455, -79.950040);
+    private LatLng FRMlatlon = new LatLng(39.662673, -79.928733);
+    private LatLng GRHlatlon = new LatLng(39.644174, -79.969498);
+    private LatLng GSKlatlon = new LatLng(39.635477, -79.951699);
+    private LatLng HODlatlon = new LatLng(39.634179, -79.956053);
+    private LatLng HONlatlon = new LatLng(39.638232, -79.956504);
+    private LatLng HSNlatlon = new LatLng(39.655325, -79.958258);
+    private LatLng HSSlatlon = new LatLng(39.654202, -79.957886);
+    private LatLng KNPlatlon = new LatLng(39.632628, -79.956980);
+    private LatLng LIBlatlon = new LatLng(39.633197, -79.954384);
+    private LatLng LNClatlon = new LatLng(39.649402, -79.965612);
+    private LatLng LSBlatlon = new LatLng(39.637073, -79.955590);
+    private LatLng LWClatlon = new LatLng(39.648602, -79.958558);
+    private LatLng LYTlatlon = new LatLng(39.647870, -79.966405);
+    private LatLng MARlatlon = new LatLng(39.635564, -79.954967);
+    private LatLng MBRClatlon = new LatLng(39.654234, -79.958051);
+    private LatLng MCAlatlon = new LatLng(39.654057, -79.961932);
+    private LatLng MCBlatlon = new LatLng(39.653888, -79.962887);
+    private LatLng MEClatlon = new LatLng(39.645670, -79.974281);///////////
+    private LatLng MHHlatlon = new LatLng(39.636563, -79.953605);
+    private LatLng MRBlatlon = new LatLng(39.646646, -79.973855);
     private LatLng MTLlatlon = new LatLng(39.634769,-79.953585);
-    private LatLng NATlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng NDLlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng NIOlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng NRClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng NSHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng NURlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng OGHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng OWPlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng PASlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng PERlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng PSKlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng PURlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SRClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng RRIlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SASlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SLGlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SMTlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SPHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SSClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng STAlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng STLlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SUMlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng SMNlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng STHlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng TMPlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng USClatlon = new LatLng(39.645670, -79.974281);
-    private LatLng VNBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng VNGlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng WDBlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng WHIlatlon = new LatLng(39.645670, -79.974281);
-    private LatLng WRSlatlon = new LatLng(39.645670, -79.974281);
+    private LatLng NATlatlon = new LatLng(39.650066, -79.984071);
+    private LatLng NIOlatlon = new LatLng(39.654928, -79.953951);
+    private LatLng NRClatlon = new LatLng(39.645265, -79.972007);
+    private LatLng NSHlatlon = new LatLng(39.645320, -79.955655);
+    private LatLng NURlatlon = new LatLng(39.649382, -79.978264);
+    private LatLng OGHlatlon = new LatLng(39.636126, -79.953729);
+    private LatLng OWPlatlon = new LatLng(39.624787, -79.963449);
+    private LatLng PASlatlon = new LatLng(39.649653, -79.969059);
+    private LatLng PERlatlon = new LatLng(39.645802, -79.967373);
+    private LatLng PSKlatlon = new LatLng(39.649100, -79.954304);
+    private LatLng PURlatlon = new LatLng(39.634436, -79.955086);
+    private LatLng SRClatlon = new LatLng(39.648185, -79.970821);
+    private LatLng RRIlatlon = new LatLng(39.657042, -79.955258);
+    private LatLng SASlatlon = new LatLng(39.645071, -79.970006);
+    private LatLng SMTlatlon = new LatLng(39.638754, -79.956599);
+    private LatLng SPHlatlon = new LatLng(39.631943, -79.952475);
+    private LatLng SSClatlon = new LatLng(39.635580, -79.953599);
+    private LatLng STAlatlon = new LatLng(39.634950, -79.965869);
+    private LatLng STLlatlon = new LatLng(39.635324, -79.952693);
+    private LatLng STHlatlon = new LatLng(39.649033, -79.969748);
+    private LatLng USClatlon = new LatLng(39.654098, -79.968307);
+    private LatLng VNBlatlon = new LatLng(39.638916, -79.951788);
+    private LatLng VNGlatlon = new LatLng(39.638038, -79.951686);
+    private LatLng WDBlatlon = new LatLng(39.635941, -79.955397);
+    private LatLng WHIlatlon = new LatLng(39.632882, -79.954649);
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -277,6 +238,9 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         AELRow = (TableRow) rootView.findViewById(R.id.AEL);
         AELRow.setOnClickListener(this);
         AELRow.setVisibility(View.GONE);
+        AERRow = (TableRow) rootView.findViewById(R.id.AER);
+        AERRow.setOnClickListener(this);
+        AERRow.setVisibility(View.GONE);
         AGSRow = (TableRow) rootView.findViewById(R.id.AGS);
         AGSRow.setOnClickListener(this);
         AGSRow.setVisibility(View.GONE);
@@ -352,36 +316,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         CSGRow = (TableRow) rootView.findViewById(R.id.CSG);
         CSGRow.setOnClickListener(this);
         CSGRow.setVisibility(View.GONE);
-        CP0Row = (TableRow) rootView.findViewById(R.id.CP0);
-        CP0Row.setOnClickListener(this);
-        CP0Row.setVisibility(View.GONE);
-        CP1Row = (TableRow) rootView.findViewById(R.id.CP1);
-        CP1Row.setOnClickListener(this);
-        CP1Row.setVisibility(View.GONE);
-        CP2Row = (TableRow) rootView.findViewById(R.id.CP2);
-        CP2Row.setOnClickListener(this);
-        CP2Row.setVisibility(View.GONE);
-        CP3Row = (TableRow) rootView.findViewById(R.id.CP3);
-        CP3Row.setOnClickListener(this);
-        CP3Row.setVisibility(View.GONE);
-        CP4Row = (TableRow) rootView.findViewById(R.id.CP4);
-        CP4Row.setOnClickListener(this);
-        CP4Row.setVisibility(View.GONE);
-        CP5Row = (TableRow) rootView.findViewById(R.id.CP5);
-        CP5Row.setOnClickListener(this);
-        CP5Row.setVisibility(View.GONE);
-        CP6Row = (TableRow) rootView.findViewById(R.id.CP6);
-        CP6Row.setOnClickListener(this);
-        CP6Row.setVisibility(View.GONE);
-        CP7Row = (TableRow) rootView.findViewById(R.id.CP7);
-        CP7Row.setOnClickListener(this);
-        CP7Row.setVisibility(View.GONE);
-        CP8Row = (TableRow) rootView.findViewById(R.id.CP8);
-        CP8Row.setOnClickListener(this);
-        CP8Row.setVisibility(View.GONE);
-        CP9Row = (TableRow) rootView.findViewById(R.id.CP9);
-        CP9Row.setOnClickListener(this);
-        CP9Row.setVisibility(View.GONE);
         CRLRow = (TableRow) rootView.findViewById(R.id.CRL);
         CRLRow.setOnClickListener(this);
         CRLRow.setVisibility(View.GONE);
@@ -415,12 +349,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         EXTRow = (TableRow) rootView.findViewById(R.id.EXT);
         EXTRow.setOnClickListener(this);
         EXTRow.setVisibility(View.GONE);
-        FAARow = (TableRow) rootView.findViewById(R.id.FAA);
-        FAARow.setOnClickListener(this);
-        FAARow.setVisibility(View.GONE);
-        FABRow = (TableRow) rootView.findViewById(R.id.FAB);
-        FABRow.setOnClickListener(this);
-        FABRow.setVisibility(View.GONE);
         FCHRow = (TableRow) rootView.findViewById(R.id.FCH);
         FCHRow.setOnClickListener(this);
         FCHRow.setVisibility(View.GONE);
@@ -457,9 +385,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         HONRow = (TableRow) rootView.findViewById(R.id.HON);
         HONRow.setOnClickListener(this);
         HONRow.setVisibility(View.GONE);
-        HSARow = (TableRow) rootView.findViewById(R.id.HSA);
-        HSARow.setOnClickListener(this);
-        HSARow.setVisibility(View.GONE);
         HSNRow = (TableRow) rootView.findViewById(R.id.HSN);
         HSNRow.setOnClickListener(this);
         HSNRow.setVisibility(View.GONE);
@@ -496,12 +421,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         MCBRow = (TableRow) rootView.findViewById(R.id.MCB);
         MCBRow.setOnClickListener(this);
         MCBRow.setVisibility(View.GONE);
-        MCJRow = (TableRow) rootView.findViewById(R.id.MCJ);
-        MCJRow.setOnClickListener(this);
-        MCJRow.setVisibility(View.GONE);
-        MCKRow = (TableRow) rootView.findViewById(R.id.MCK);
-        MCKRow.setOnClickListener(this);
-        MCKRow.setVisibility(View.GONE);
         MECRow = (TableRow) rootView.findViewById(R.id.MEC);
         MECRow.setOnClickListener(this);
         MECRow.setVisibility(View.GONE);
@@ -517,9 +436,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         NATRow = (TableRow) rootView.findViewById(R.id.NAT);
         NATRow.setOnClickListener(this);
         NATRow.setVisibility(View.GONE);
-        NDLRow = (TableRow) rootView.findViewById(R.id.NDL);
-        NDLRow.setOnClickListener(this);
-        NDLRow.setVisibility(View.GONE);
+
         NIORow = (TableRow) rootView.findViewById(R.id.NIO);
         NIORow.setOnClickListener(this);
         NIORow.setVisibility(View.GONE);
@@ -559,9 +476,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         SASRow = (TableRow) rootView.findViewById(R.id.SAS);
         SASRow.setOnClickListener(this);
         SASRow.setVisibility(View.GONE);
-        SLGRow = (TableRow) rootView.findViewById(R.id.SLG);
-        SLGRow.setOnClickListener(this);
-        SLGRow.setVisibility(View.GONE);
         SMTRow = (TableRow) rootView.findViewById(R.id.SMT);
         SMTRow.setOnClickListener(this);
         SMTRow.setVisibility(View.GONE);
@@ -577,18 +491,9 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         STLRow = (TableRow) rootView.findViewById(R.id.STL);
         STLRow.setOnClickListener(this);
         STLRow.setVisibility(View.GONE);
-        SUMRow = (TableRow) rootView.findViewById(R.id.SUM);
-        SUMRow.setOnClickListener(this);
-        SUMRow.setVisibility(View.GONE);
-        SMNRow = (TableRow) rootView.findViewById(R.id.SMN);
-        SMNRow.setOnClickListener(this);
-        SMNRow.setVisibility(View.GONE);
         STHRow = (TableRow) rootView.findViewById(R.id.STH);
         STHRow.setOnClickListener(this);
         STHRow.setVisibility(View.GONE);
-        TMPRow = (TableRow) rootView.findViewById(R.id.TMP);
-        TMPRow.setOnClickListener(this);
-        TMPRow.setVisibility(View.GONE);
         USCRow = (TableRow) rootView.findViewById(R.id.USC);
         USCRow.setOnClickListener(this);
         USCRow.setVisibility(View.GONE);
@@ -604,9 +509,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         WHIRow = (TableRow) rootView.findViewById(R.id.WHI);
         WHIRow.setOnClickListener(this);
         WHIRow.setVisibility(View.GONE);
-        WRSRow = (TableRow) rootView.findViewById(R.id.WRS);
-        WRSRow.setOnClickListener(this);
-        WRSRow.setVisibility(View.GONE);
         RegistryRow = (TableRow) rootView.findViewById(R.id.REGISTRY);
         RegistryRow.setVisibility(View.GONE);
 
@@ -661,8 +563,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
 
     public void onClick(View v)
     {
-        Marker marker;
-
         switch(v.getId())
         {
             case R.id.map_mapButton:
@@ -677,6 +577,9 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
                 break;
             case R.id.AEL:
                 updateMarkers(AELlatlon,"Aerodynamics Laboratory", AELRow);
+                break;
+            case R.id.AER:
+                updateMarkers(AERlatlon,"Advanced Engineering Research Building", AERRow);
                 break;
             case R.id.AGS:
                 updateMarkers(AGSlatlon,"Agricultural Sciences Building", AGSRow);
@@ -753,36 +656,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
             case R.id.CSG:
                 updateMarkers(CSGlatlon,"Crime Scene Garage", CSGRow);
                 break;
-            case R.id.CP0:
-                updateMarkers(CP0latlon,"366 College Park Apartments", CP0Row);
-                break;
-            case R.id.CP1:
-                updateMarkers(CP1latlon,"367 College Park Apartments", CP1Row);
-                break;
-            case R.id.CP2:
-                updateMarkers(CP2latlon,"379 College Park Apartments", CP2Row);
-                break;
-            case R.id.CP3:
-                updateMarkers(CP3latlon,"380 College Park Apartments", CP3Row);
-                break;
-            case R.id.CP4:
-                updateMarkers(CP4latlon,"381 College Park Apartments", CP4Row);
-                break;
-            case R.id.CP5:
-                updateMarkers(CP5latlon,"394 College Park Apartments", CP5Row);
-                break;
-            case R.id.CP6:
-                updateMarkers(CP6latlon,"395 College Park Apartments", CP6Row);
-                break;
-            case R.id.CP7:
-                updateMarkers(CP7latlon,"401 College Park Apartments", CP7Row);
-                break;
-            case R.id.CP8:
-                updateMarkers(CP8latlon,"411 College Park Apartments", CP8Row);
-                break;
-            case R.id.CP9:
-                updateMarkers(CP9latlon,"421 College Park Apartments", CP9Row);
-                break;
             case R.id.CRL:
                 updateMarkers(CRLlatlon,"Chemistry Research Laboratory", CRLRow);
                 break;
@@ -815,12 +688,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
                 break;
             case R.id.EXT:
                 updateMarkers(EXTlatlon,"Pierpont Extended Hsg", EXTRow);
-                break;
-            case R.id.FAA:
-                updateMarkers(FAAlatlon,"Faculty Apartment A", FAARow);
-                break;
-            case R.id.FAB:
-                updateMarkers(FABlatlon,"Faculty Apartment B", FABRow);
                 break;
             case R.id.FCH:
                 updateMarkers(FCHlatlon,"Fieldcrest Hall", FCHRow);
@@ -858,9 +725,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
             case R.id.HON:
                 updateMarkers(HONlatlon,"Honors Hall", HONRow);
                 break;
-            case R.id.HSA:
-                updateMarkers(HSAlatlon,"Health Sciences Addition", HSARow);
-                break;
             case R.id.HSN:
                 updateMarkers(HSNlatlon,"Health Sciences North", HSNRow);
                 break;
@@ -871,7 +735,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
                 updateMarkers(KNPlatlon,"Knapp Hall", KNPRow);
                 break;
             case R.id.LIB:
-                updateMarkers(LIBlatlon,"Charles C. Wise, Jr. Library", CP0Row);
+                updateMarkers(LIBlatlon,"Charles C. Wise, Jr. Library", LIBRow);
                 break;
             case R.id.LNC:
                 updateMarkers(LNClatlon,"Lincoln Hall", LNCRow);
@@ -897,12 +761,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
             case R.id.MCB:
                 updateMarkers(MCBlatlon,"Medical Center Apartment Building J", MCBRow);
                 break;
-            case R.id.MCJ:
-                updateMarkers(MCJlatlon,"Med Center Apartment J", MCJRow);
-                break;
-            case R.id.MCK:
-                updateMarkers(MCKlatlon,"Med Center Apartment K", MCKRow);
-                break;
             case R.id.MEC:
                 updateMarkers(MEClatlon,"Museum Education Center", MECRow);
                 break;
@@ -918,9 +776,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
             case R.id.NAT:
                 updateMarkers(NATlatlon,"Natatorium - Shell", NATRow);
                 break;
-            case R.id.NDL:
-                updateMarkers(NDLlatlon,"New Downtown Library", NDLRow);
-                break;
             case R.id.NIO:
                 updateMarkers(NIOlatlon,"NIOSH Building", NIORow);
                 break;
@@ -931,7 +786,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
                 updateMarkers(NSHlatlon,"North Street House", NSHRow);
                 break;
             case R.id.NUR:
-                updateMarkers(NURlatlon,"NURSERY SCHOOL", NURRow);
+                updateMarkers(NURlatlon,"Nursery School", NURRow);
                 break;
             case R.id.OGH:
                 updateMarkers(OGHlatlon,"Oglebay Hall", OGHRow);
@@ -960,9 +815,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
             case R.id.SAS:
                 updateMarkers(SASlatlon,"South Agricultural Sciences", SASRow);
                 break;
-            case R.id.SLG:
-                updateMarkers(SLGlatlon,"College Park - The Ridge", SLGRow);
-                break;
             case R.id.SMT:
                 updateMarkers(SMTlatlon,"Summit Hall", SMTRow);
                 break;
@@ -978,17 +830,8 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
             case R.id.STL:
                 updateMarkers(STLlatlon,"Stalnaker Hall", STLRow);
                 break;
-            case R.id.SUM:
-                updateMarkers(SUMlatlon,"Summer School Housing Downtown", SUMRow);
-                break;
-            case R.id.SMN:
-                updateMarkers(SMNlatlon,"Summer School Housing", SMNRow);
-                break;
             case R.id.STH:
                 updateMarkers(STHlatlon,"Student Health", STHRow);
-                break;
-            case R.id.TMP:
-                updateMarkers(TMPlatlon,"Temporary Housing - Hotel", TMPRow);
                 break;
             case R.id.USC:
                 updateMarkers(USClatlon,"University Services Center", USCRow);
@@ -1004,9 +847,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
                 break;
             case R.id.WHI:
                 updateMarkers(WHIlatlon,"White Hall", WHIRow);
-                break;
-            case R.id.WRS:
-                updateMarkers(WRSlatlon,"Wrestling Structure", WRSRow);
                 break;
         }
 
@@ -1041,6 +881,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         // Hiding Building Rows
         TitleRow.setVisibility(View.GONE);
         AELRow.setVisibility(View.GONE);
+        AERRow.setVisibility(View.GONE);
         AGSRow.setVisibility(View.GONE);
         ALHRow.setVisibility(View.GONE);
         ARHRow.setVisibility(View.GONE);
@@ -1066,16 +907,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         CS2Row.setVisibility(View.GONE);
         CS3Row.setVisibility(View.GONE);
         CSGRow.setVisibility(View.GONE);
-        CP0Row.setVisibility(View.GONE);
-        CP1Row.setVisibility(View.GONE);
-        CP2Row.setVisibility(View.GONE);
-        CP3Row.setVisibility(View.GONE);
-        CP4Row.setVisibility(View.GONE);
-        CP5Row.setVisibility(View.GONE);
-        CP6Row.setVisibility(View.GONE);
-        CP7Row.setVisibility(View.GONE);
-        CP8Row.setVisibility(View.GONE);
-        CP9Row.setVisibility(View.GONE);
         CRLRow.setVisibility(View.GONE);
         CRPRow.setVisibility(View.GONE);
         CRRRow.setVisibility(View.GONE);
@@ -1087,8 +918,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         ESBRow.setVisibility(View.GONE);
         EVLRow.setVisibility(View.GONE);
         EXTRow.setVisibility(View.GONE);
-        FAARow.setVisibility(View.GONE);
-        FABRow.setVisibility(View.GONE);
         FCHRow.setVisibility(View.GONE);
         FH1Row.setVisibility(View.GONE);
         FH2Row.setVisibility(View.GONE);
@@ -1101,7 +930,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         GSKRow.setVisibility(View.GONE);
         HODRow.setVisibility(View.GONE);
         HONRow.setVisibility(View.GONE);
-        HSARow.setVisibility(View.GONE);
         HSNRow.setVisibility(View.GONE);
         HSSRow.setVisibility(View.GONE);
         KNPRow.setVisibility(View.GONE);
@@ -1114,13 +942,10 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         MBRCRow.setVisibility(View.GONE);
         MCARow.setVisibility(View.GONE);
         MCBRow.setVisibility(View.GONE);
-        MCJRow.setVisibility(View.GONE);
-        MCKRow.setVisibility(View.GONE);
         MECRow.setVisibility(View.GONE);
         MHHRow.setVisibility(View.GONE);
         MTLRow.setVisibility(View.GONE);
         NATRow.setVisibility(View.GONE);
-        NDLRow.setVisibility(View.GONE);
         NIORow.setVisibility(View.GONE);
         NRCRow.setVisibility(View.GONE);
         NSHRow.setVisibility(View.GONE);
@@ -1134,22 +959,18 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         SRCRow.setVisibility(View.GONE);
         RRIRow.setVisibility(View.GONE);
         SASRow.setVisibility(View.GONE);
-        SLGRow.setVisibility(View.GONE);
         SMTRow.setVisibility(View.GONE);
         SPHRow.setVisibility(View.GONE);
         SSCRow.setVisibility(View.GONE);
         STARow.setVisibility(View.GONE);
         STLRow.setVisibility(View.GONE);
-        SUMRow.setVisibility(View.GONE);
-        SMNRow.setVisibility(View.GONE);
         STHRow.setVisibility(View.GONE);
-        TMPRow.setVisibility(View.GONE);
         USCRow.setVisibility(View.GONE);
         VNBRow.setVisibility(View.GONE);
         VNGRow.setVisibility(View.GONE);
         WDBRow.setVisibility(View.GONE);
         WHIRow.setVisibility(View.GONE);
-        WRSRow.setVisibility(View.GONE);
+
         RegistryRow.setVisibility(View.GONE);
 
     }
@@ -1164,6 +985,7 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         MapRow.setVisibility(View.GONE);
         //Making Building Rows Visible
         TitleRow.setVisibility(View.VISIBLE);
+        AELRow.setVisibility(View.VISIBLE);
         AELRow.setVisibility(View.VISIBLE);
         AGSRow.setVisibility(View.VISIBLE);
         ALHRow.setVisibility(View.VISIBLE);
@@ -1190,16 +1012,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         CS2Row.setVisibility(View.VISIBLE);
         CS3Row.setVisibility(View.VISIBLE);
         CSGRow.setVisibility(View.VISIBLE);
-        CP0Row.setVisibility(View.VISIBLE);
-        CP1Row.setVisibility(View.VISIBLE);
-        CP2Row.setVisibility(View.VISIBLE);
-        CP3Row.setVisibility(View.VISIBLE);
-        CP4Row.setVisibility(View.VISIBLE);
-        CP5Row.setVisibility(View.VISIBLE);
-        CP6Row.setVisibility(View.VISIBLE);
-        CP7Row.setVisibility(View.VISIBLE);
-        CP8Row.setVisibility(View.VISIBLE);
-        CP9Row.setVisibility(View.VISIBLE);
         CRLRow.setVisibility(View.VISIBLE);
         CRPRow.setVisibility(View.VISIBLE);
         CRRRow.setVisibility(View.VISIBLE);
@@ -1211,8 +1023,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         ESBRow.setVisibility(View.VISIBLE);
         EVLRow.setVisibility(View.VISIBLE);
         EXTRow.setVisibility(View.VISIBLE);
-        FAARow.setVisibility(View.VISIBLE);
-        FABRow.setVisibility(View.VISIBLE);
         FCHRow.setVisibility(View.VISIBLE);
         FH1Row.setVisibility(View.VISIBLE);
         FH2Row.setVisibility(View.VISIBLE);
@@ -1225,7 +1035,6 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         GSKRow.setVisibility(View.VISIBLE);
         HODRow.setVisibility(View.VISIBLE);
         HONRow.setVisibility(View.VISIBLE);
-        HSARow.setVisibility(View.VISIBLE);
         HSNRow.setVisibility(View.VISIBLE);
         HSSRow.setVisibility(View.VISIBLE);
         KNPRow.setVisibility(View.VISIBLE);
@@ -1238,13 +1047,10 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         MBRCRow.setVisibility(View.VISIBLE);
         MCARow.setVisibility(View.VISIBLE);
         MCBRow.setVisibility(View.VISIBLE);
-        MCJRow.setVisibility(View.VISIBLE);
-        MCKRow.setVisibility(View.VISIBLE);
         MECRow.setVisibility(View.VISIBLE);
         MHHRow.setVisibility(View.VISIBLE);
         MTLRow.setVisibility(View.VISIBLE);
         NATRow.setVisibility(View.VISIBLE);
-        NDLRow.setVisibility(View.VISIBLE);
         NIORow.setVisibility(View.VISIBLE);
         NRCRow.setVisibility(View.VISIBLE);
         NSHRow.setVisibility(View.VISIBLE);
@@ -1258,22 +1064,17 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         SRCRow.setVisibility(View.VISIBLE);
         RRIRow.setVisibility(View.VISIBLE);
         SASRow.setVisibility(View.VISIBLE);
-        SLGRow.setVisibility(View.VISIBLE);
         SMTRow.setVisibility(View.VISIBLE);
         SPHRow.setVisibility(View.VISIBLE);
         SSCRow.setVisibility(View.VISIBLE);
         STARow.setVisibility(View.VISIBLE);
         STLRow.setVisibility(View.VISIBLE);
-        SUMRow.setVisibility(View.VISIBLE);
-        SMNRow.setVisibility(View.VISIBLE);
         STHRow.setVisibility(View.VISIBLE);
-        TMPRow.setVisibility(View.VISIBLE);
         USCRow.setVisibility(View.VISIBLE);
         VNBRow.setVisibility(View.VISIBLE);
         VNGRow.setVisibility(View.VISIBLE);
         WDBRow.setVisibility(View.VISIBLE);
         WHIRow.setVisibility(View.VISIBLE);
-        WRSRow.setVisibility(View.VISIBLE);
         RegistryRow.setVisibility(View.VISIBLE);
     }
 

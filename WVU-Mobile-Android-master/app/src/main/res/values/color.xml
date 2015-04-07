@@ -11,9 +11,11 @@
     <color name="ColorPRTGray1">#575757</color>
     <color name="ColorPRTGray2">#CBCBCB</color>
     <color name="ColorPRTGray3">#A2A2A2</color>
+    <color name="SelectBlue">#012a52</color>
     <color name="ColorBlack">#001528</color>
     <color name="GoldColor">#EBD38C</color>
     <color name="LightBlueColor">#005493</color>
+    <color name="AlphaGray">#66D9D9D9</color>
     <color name="DarkBlueColor">#012241</color>
     <color name="DarkBlueColor2">#014071</color>
     <color name="DarkestBlueColor">#001528</color>

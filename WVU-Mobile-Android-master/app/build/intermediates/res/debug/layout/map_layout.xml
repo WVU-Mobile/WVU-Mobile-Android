@@ -78,6 +78,22 @@
         android:layout_height="wrap_content"
         android:background="@color/DarkestBlueColor"
         android:layout_weight="0"
+        android:id="@+id/AER">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nADVANCED ENGINEERING RESEARCH BUILDING\n"
+            android:textColor="@color/ColorGold" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\nAER-E\n"
+            android:textColor="@color/ColorGold"
+            android:layout_gravity="right" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:layout_weight="0"
         android:id="@+id/AGS">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -478,166 +494,6 @@
         android:layout_height="wrap_content"
         android:background="@color/DarkestBlueColor"
         android:layout_weight="0"
-        android:id="@+id/CP0">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n366 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP0-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP1">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n367 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP1-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP2">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n379 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP2-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP3">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n380 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP3-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP4">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n381 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP4-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP5">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n394 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP5-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP6">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n395 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP6-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP7">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n401 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP7-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP8">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n411 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP8-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/CP9">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\n421 COLLEGE PARK APARTMENTS\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCP9-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
         android:id="@+id/CRL">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -806,38 +662,6 @@
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="\nEXT-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/FAA">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nFACULTY APARTMENT A\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nFAA-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/FAB">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nFACULTY APARTMENT B\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nFAB-E\n"
             android:textColor="@color/ColorGold"
             android:layout_gravity="right" />
     </TableRow>
@@ -1038,22 +862,6 @@
         android:layout_height="wrap_content"
         android:background="@color/DarkestBlueColor"
         android:layout_weight="0"
-        android:id="@+id/HSA">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nHEALTH SCIENCES ADDITION\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nHSA-H\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
         android:id="@+id/HSN">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -1137,7 +945,7 @@
         android:id="@+id/LSB">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nLIFE SCIENCES BUILDINGn"
+            android:text="\nLIFE SCIENCES BUILDING"
             android:textColor="@color/ColorGold"/>
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -1246,38 +1054,6 @@
         android:layout_height="wrap_content"
         android:background="@color/DarkestBlueColor"
         android:layout_weight="0"
-        android:id="@+id/MCJ">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nMED CENTER APARTMENT J\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nMCJ-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/MCK">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nMED CENTER APARTMENT K\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nMCK-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
         android:id="@+id/MEC">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -1350,22 +1126,6 @@
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="\nNAT-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/NDL">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nNEW DOWNTOWN LIBRARY\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nNDL-D\n"
             android:textColor="@color/ColorGold"
             android:layout_gravity="right" />
     </TableRow>
@@ -1582,22 +1342,6 @@
         android:layout_height="wrap_content"
         android:background="@color/DarkestBlueColor"
         android:layout_weight="0"
-        android:id="@+id/SLG">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nCOLLEGE PARK - THE RIDGE\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nSLG-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
         android:id="@+id/SMT">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -1678,38 +1422,6 @@
         android:layout_height="wrap_content"
         android:background="@color/DarkestBlueColor"
         android:layout_weight="0"
-        android:id="@+id/SUM">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nSUMMER SCHOOL HOUSING DOWNTOWN\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nSUM-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/SMN">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nSUMMER SCHOOL HOUSING\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nSUM-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
         android:id="@+id/STH">
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -1718,22 +1430,6 @@
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="\nSTH-E\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/TMP">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nTEMPORARY HOUSING HOTEL\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nTMP-E\n"
             android:textColor="@color/ColorGold"
             android:layout_gravity="right" />
     </TableRow>
@@ -1814,22 +1510,6 @@
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="\nWHI-D\n"
-            android:textColor="@color/ColorGold"
-            android:layout_gravity="right" />
-    </TableRow>
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor"
-        android:layout_weight="0"
-        android:id="@+id/WRS">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nWRESTLING STRUCTURE\n"
-            android:textColor="@color/ColorGold"/>
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\nWRS-E\n"
             android:textColor="@color/ColorGold"
             android:layout_gravity="right" />
     </TableRow>

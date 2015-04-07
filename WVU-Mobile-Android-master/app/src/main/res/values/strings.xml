@@ -2,14 +2,14 @@
 <resources>
 
     <string name="app_name"></string>
-    <string name="title_section1">HOME</string>
-    <string name="title_section2">DINING</string>
-    <string name="title_section3">PRT</string>
-    <string name="title_section4">BUSES</string>
-    <string name="title_section5">MAP</string>
-    <string name="title_section6">SPORTS</string>
-    <string name="title_section7">NEWS</string>
-    <string name="title_section8">EVENTS</string>
+    <string name="title_section1">H O M E</string>
+    <string name="title_section2">D I N I N G</string>
+    <string name="title_section3">P R T</string>
+    <string name="title_section4">B U S E S</string>
+    <string name="title_section5">M A P</string>
+    <string name="title_section6">S P O R T S</string>
+    <string name="title_section7">N E W S</string>
+    <string name="title_section8">E V E N T S</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
@@ -21,7 +21,7 @@
     <string name="status"></string>
     <string name="PRT_hours">Monday to Friday 6:30 AM to 10:15PM\n Saturday 9:30 AM to 5PM\n Sunday CLOSED</string>
     <string name="MenuPlaceholder">CONTENT\nNOT\nAVAILABLE\nAT THIS\nTIME</string>
-    <string name="title_activity_dining">Dining</string>
+    <string name="title_activity_dining"></string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

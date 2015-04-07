@@ -51,7 +51,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_breakfasttitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="BREAKFAST"
             android:textColor="@color/ColorGold" />
     </TableRow>
@@ -64,6 +64,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
 
         <TextView
             android:text="@string/MenuPlaceholder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_breakfast"
             android:layout_span="2"/>
@@ -78,7 +79,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hbreakfasttitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="HEALTHY 'U' BREAKFAST"
             android:textColor="@color/ColorGold"/>
 
@@ -92,6 +93,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         <TextView
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/d_hbreakfast" />
 
     </TableRow>
@@ -104,7 +106,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_breakfast_astitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="BREAKFAST ACTION STATION"
             android:textColor="@color/ColorGold"/>
 
@@ -117,6 +119,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_breakfast_as">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_breakfast_as" />
@@ -131,7 +134,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_lunchtitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="LUNCH"
             android:textColor="@color/ColorGold"/>
 
@@ -143,6 +146,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_lunch">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_lunch" />
@@ -157,7 +161,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hlunchtitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="HEALTHY 'U' LUNCH"
             android:textColor="@color/ColorGold"/>
 
@@ -170,6 +174,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hlunch">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_hlunch" />
@@ -184,7 +189,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_lunch_astitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="LUNCH ACTION STATION"
             android:textColor="@color/ColorGold"/>
 
@@ -197,6 +202,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_lunch_as">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_lunch_as" />
@@ -211,7 +217,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_dinnertitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="DINNER"
             android:textColor="@color/ColorGold"/>
 
@@ -224,6 +230,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_dinner">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_dinner" />
@@ -238,7 +245,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hdinnertitle">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="HEALTH 'U' DINNER"
             android:textColor="@color/ColorGold"/>
 
@@ -251,6 +258,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hdinner">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_hdinner" />
@@ -266,7 +274,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:longClickable="true">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="DINNER ACTION STATION"
             android:textColor="@color/ColorGold"/>
 
@@ -279,6 +287,7 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_dinner_as">
 
         <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_dinner_as" />

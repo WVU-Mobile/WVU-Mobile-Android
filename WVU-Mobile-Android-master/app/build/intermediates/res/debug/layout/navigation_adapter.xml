@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkestBlueColor">
+       <TextView
+           android:id="@+id/placeholder"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="\placeholder"
+           android:textAppearance="?android:textAppearanceLarge"
+           android:textColor="@color/ColorGold"
+           android:background="@drawable/drawer_list_selector"
+           android:layout_alignParentTop="false"
+           android:layout_alignParentLeft="false"
+           android:layout_alignParentBottom="false"
+           android:layout_alignParentRight="false"
+           android:layout_alignWithParentIfMissing="false"
+           android:lines="2"
+           android:gravity="center_vertical" />
+</RelativeLayout><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/navigation_adapter.xml -->

@@ -294,7 +294,7 @@ public class DiningActivity extends ActionBarActivity {
     public void onBackPressed()
     {
 
-        Intent intent = new Intent(DiningActivity.this,MainActivity.class);
+       Intent intent = new Intent(DiningActivity.this,MainActivity.class);
 
         intent.putExtra(BACK_MESSAGE,"Check");
         startActivity(intent);
@@ -303,10 +303,10 @@ public class DiningActivity extends ActionBarActivity {
     protected void onDestroy()
     {
         super.onDestroy();
-        Intent intent = new Intent(DiningActivity.this,MainActivity.class);
+        /*Intent intent = new Intent(DiningActivity.this,MainActivity.class);
 
         intent.putExtra(BACK_MESSAGE,"Check");
-        startActivity(intent);
+        startActivity(intent);*/
 
     }
 }
