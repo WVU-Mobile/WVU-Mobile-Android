@@ -873,8 +873,8 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     public void viewMap()
     {
         //Updating Button Highlight
-        MapSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray2));
-        BuildingSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray1));
+        MapSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray1));
+        BuildingSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray2));
 
         //Making the Map Visible
         MapRow.setVisibility(View.VISIBLE);
@@ -978,8 +978,8 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
     public void viewBuildings()
     {
         //Updating Button Highlight
-        MapSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray1));
-        BuildingSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray2));
+        MapSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray2));
+        BuildingSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray1));
 
         //Hiding the Map
         MapRow.setVisibility(View.GONE);

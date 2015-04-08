@@ -4,12 +4,4 @@
     android:clickable="true"
     android:gravity="center_horizontal"
     android:background="@color/DarkestBlueColor">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Home"
-        android:id="@+id/textView"
-        android:autoText="false" />
 </RelativeLayout><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/home_layout.xml -->
