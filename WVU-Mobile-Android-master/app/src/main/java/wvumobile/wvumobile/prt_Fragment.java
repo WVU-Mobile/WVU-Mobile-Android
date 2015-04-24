@@ -1,8 +1,11 @@
 package wvumobile.wvumobile;
 
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +42,8 @@ public class prt_Fragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
+        ActionBar actionBar = ((ActionBarActivity)getActivity()).getSupportActionBar();
+        actionBar.setTitle("PRT");
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         Long timestamp = System.currentTimeMillis()/1000L;

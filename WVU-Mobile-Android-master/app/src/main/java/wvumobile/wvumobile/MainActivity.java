@@ -52,33 +52,38 @@ public class MainActivity extends ActionBarActivity
         {
             case 0:
                 objfragment = new news_Fragment();
+                mTitle = "News";
                 break;
             case 1:
                 objfragment = new dining_Fragment();
+                mTitle = "Dining";
                 break;
             case 2:
                 objfragment = new prt_Fragment();
-                this.getSupportActionBar().setTitle("PRT");
+                mTitle = "PRT";//this.getSupportActionBar().setTitle("PRT");
                 break;
             case 3:
                 objfragment = new buses_Fragment();
-                setTitle("Buses");
+                mTitle= "Buses";
                 break;
             case 4:
                 objfragment =  new map_Fragment();
-                setTitle("Map");
+                mTitle = "Map";
                 break;
             case 5:
                 objfragment = new events_Fragment();
-                setTitle("News");
+                mTitle = "Events";
                 break;
             case 6:
                 objfragment = new help_Fragment();
-                setTitle("Events");
+                mTitle = "Help";
                 break;
             case 7:
                 objfragment = new settings_Fragment();
-                setTitle("Help");
+                mTitle = "Settings";
+                break;
+            default:
+                mTitle = "Help";
                 break;
 
 
