@@ -15,6 +15,7 @@
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="AlphaGray">#66D9D9D9</color>
+    <color name="CellBlue">#19324B</color>
     <color name="ColorBlack">#001528</color>
     <color name="ColorBrightBlue">#007cd4</color>
     <color name="ColorGold">#EBD38C</color>
@@ -217,7 +218,7 @@
     <eat-comment/>
     <string name="MenuPlaceholder">CONTENT\nNOT\nAVAILABLE\nAT THIS\nTIME</string>
     <string name="PRT_hours">Monday to Friday 6:30 AM to 10:15PM\n Saturday 9:30 AM to 5PM\n Sunday CLOSED</string>
-    <string name="PRT_normal">The PRT is running on a \n normal schedule.</string>
+    <string name="PRT_normal">The PRT is running on a normal schedule.</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -244,6 +245,32 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
     <string name="app_name"/>
+    <string name="arnoldhours">Monday to Friday 7:00 AM to 10:00AM \nand 11:00 AM to 8:00 PM \nSaturday, Sunday, &amp; Holidays CLOSED</string>
+    <string name="arnoldsdinerDescription">Arnold\'s Diner is located in Arnold Hall and serves breakfast, lunch, and dinner.</string>
+    <string name="boremanbistroDescription">Boreman Bistro is located in Boreman Hall and serves breakfast, lunch, and dinner.</string>
+    <string name="boremandhours">Monday to Friday 11:00 AM to 7:00 PM \nSaturday, Sunday, &amp; Holidays 9:00 AM to \n7:00 PM</string>
+    <string name="busPlaceholderHours">This is a placeholder String.</string>
+    <string name="busPlaceholderLocation">Placeholder</string>
+    <string name="bus_l10Hours">Runs Monday through Saturday 6:30 AM - 5:10 PM.</string>
+    <string name="bus_l11Hours">Runs Monday through Saturday 7:00 AM - 5:15 PM.</string>
+    <string name="bus_l12Hours">Runs Monday through Saturday 8:05 AM - 4:15 PM.</string>
+    <string name="bus_l13Hours">Runs Monday through Saturday 9:10 AM - 3:05 PM.</string>
+    <string name="bus_l14Hours">Runs Monday through Friday 7:40 AM - 4:20 PM and Saturday 7:00 AM - 5:10 PM</string>
+    <string name="bus_l15Hours">Runs Monday through Saturday starting at 7:10 AM. Monday through Wednesday ends at 8:40 PM. Thursday through Saturday ends at 2:30 AM.</string>
+    <string name="bus_l16Hours">Runs Monday through Friday 6:40 AM - 8:40 PM (6:20 PM Summer). Saturday 3:20 - 7:20 PM.</string>
+    <string name="bus_l17Hours">Runs Monday through Friday 7:30 AM - 2:15 PM.</string>
+    <string name="bus_l1Hours">Runs Thursday through Saturday 6:00 - 2:50 AM.</string>
+    <string name="bus_l2Hours">Runs Monday through Saturday 6:00 PM - 12:00 AM.</string>
+    <string name="bus_l3Hours">Runs Monday through Friday 8:00 AM - 5:40 PM and Saturday 9:00 AM - 5:40 PM.</string>
+    <string name="bus_l4Hours">Runs Monday through Saturday 7:00 AM - 10:20 PM.</string>
+    <string name="bus_l5Hours">Runs Monday through Saturday 6:00 AM - 5:15 PM.</string>
+    <string name="bus_l6Hours">Runs Monday through Saturday 6:20 AM - 5:10 PM.</string>
+    <string name="bus_l7Hours">Runs Monday through Saturday 6:30 AM - 5:10 PM.</string>
+    <string name="bus_l8Hours">Runs Monday through Saturday 7:00 AM - 5:10 PM.</string>
+    <string name="bus_l9Hours">Runs Monday through Saturday 6:00 AM - 5:10 PM.</string>
+    <string name="businfo">All bus services seen here are powered by Mountain Line, the Morgantown public transit system. For more information visit busride.org.</string>
+    <string name="cafeevansdaleDescription">Cafe Evansdale is located in Brooke Tower and serves breakfast, lunch, and dinner.</string>
+    <string name="cafeevansdalehours">Monday to Thursday 7:00 AM to 8:00 PM \nFriday 7:00 AM to 6:30 PM\nSaturday &amp; Holidays 9:00 AM to 6:30 PM\n Sunday 9:00 AM to 7:30 PM</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
@@ -281,20 +308,34 @@
     <string name="decline">Decline</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="hatfieldsDescription">Hatfields is located in the Mountainlair and serves breakfast and lunch.</string>
+    <string name="hatfieldsHours">Monday to Friday 7:15 AM to 10:00 PM \n and 11:00 AM to 2:00 PM \nSaturday, Sunday, &amp; Holidays CLOSED</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
+    <string name="help_content1">Students who are experiencing a life threatening \nemergency should always call 911.</string>
+    <string name="help_content2">If you or someone you know is feeling suicidal,\nthese hotlines can provide assistance.</string>
+    <string name="help_content3">Provides a variety of psychological, psychiatric, and\ncounseling services including: individual, couples,\neducational, and career counseling.</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="offline">O F F L I N E</string>
     <string name="online">O N L I N E</string>
     <string name="registry_info">\nAll Buildings Listed \nAre Located In The \nWVU Building Registry\n\nThe Registry can be found at\nhttp://registrar.wvu.edu/building-key\n</string>
-    <string name="status"/>
+    <string name="settingsfeedback">Please send questions, suggestions, or bug reports to our email address.</string>
+    <string name="settingsfollow">You can also like and follow WVU Mobile on Facebook and Twitter!</string>
+    <string name="settingsnightmode">Change the theme of WVU Mobile to a dark color scheme.</string>
+    <string name="settingstwitter">If you would like to see more from us, please follow us on Twitter!</string>
+    <string name="status">This\nis\na\nplaceholder</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="summitcafeDescription">Summit Cafe is located in Summit Hall and serves breakfast, lunch, and dinner.</string>
+    <string name="summithours">Monday to Friday 7:00 AM to 7:00 PM \nSaturday, Sunday, &amp; Holidays 11:00 AM \n to 6:30 PM</string>
+    <string name="terraceroomDescription">The Terrace Room is located in Stalnaker Hall and serves lunch and dinner.</string>
+    <string name="terraceroomhours">Monday to Thursday 11:00 AM to 8:00 \nPM \nFriday 11:00 AM to 2:00 PM \nSaturday, Sunday, &amp; Holidays CLOSED</string>
+    <string name="title_activity_bus">BusActivity</string>
     <string name="title_activity_dining"/>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_section1">H O M E</string>
@@ -302,9 +343,10 @@
     <string name="title_section3">P R T</string>
     <string name="title_section4">B U S E S</string>
     <string name="title_section5">M A P</string>
-    <string name="title_section6">S P O R T S</string>
-    <string name="title_section7">N E W S</string>
-    <string name="title_section8">E V E N T S</string>
+    <string name="title_section6">N E W S</string>
+    <string name="title_section7">E V E N T S</string>
+    <string name="title_section8">H E L P</string>
+    <string name="title_section9">S E T T I N G S</string>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
@@ -317,6 +359,8 @@
         <item name="colorPrimary">@color/DarkBlueColor</item>
         <item name="colorPrimaryDark">@color/DarkestBlueColor</item>
         <item name="android:actionMenuTextColor">@color/ColorGold</item>
+        <item name="android:textColor">@color/ColorGold</item>
+        <item name="android:background">@color/DarkestBlueColor</item>
     </style>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -1085,6 +1129,30 @@
         <item name="android:textColor">#001528</item>
         <item name="android:background">#001528</item>
     </style>
+    <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="MainActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/DarkBlueColor2</item>
+        <item name="android:titleTextStyle">@style/MainActionBarTitleText</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/DarkBlueColor2</item>
+        <item name="titleTextStyle">@style/MainActionBarTitleText</item>
+    </style>
+    <style name="MainActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/ColorGold</item>
+        <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+    <style name="MainBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MainActionBar</item>
+        <item name="android:statusBarColor">@color/DarkBlueColor</item>
+        <item name="android:windowActionBarOverlay">@style/MainActionBar</item>
+        <item name="android:textColor">@color/ColorGold</item>
+        <item name="android:title">MENU</item>
+        <item name="android:labelTextSize">50sp</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MainActionBar</item>
+    </style>
     <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
@@ -1253,6 +1321,15 @@
     <style name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" parent="android:Widget">
         <item name="android:layout_marginLeft">@dimen/abc_dropdownitem_text_padding_left</item>
     </style>
+    <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="SecondaryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionMenuTextColor">@color/ColorGold</item>
+        <item name="android:textColor">@color/ColorGold</item>
+        <item name="android:background">@color/DarkBlueColor2</item>
+    </style>
+    <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>

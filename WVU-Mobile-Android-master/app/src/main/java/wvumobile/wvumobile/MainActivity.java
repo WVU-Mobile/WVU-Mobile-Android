@@ -13,6 +13,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Window;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.view.Gravity;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -33,43 +38,49 @@ public class MainActivity extends ActionBarActivity
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                     getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(R.id.navigation_drawer,(DrawerLayout) findViewById(R.id.drawer_layout));
+        //setTitle("MENU");
     }
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Fragment objfragment = null;
-        boolean isMap = false;
         switch(position)
         {
             case 0:
-                objfragment = new home_Fragment();
+                objfragment = new news_Fragment();
                 break;
             case 1:
                 objfragment = new dining_Fragment();
                 break;
             case 2:
                 objfragment = new prt_Fragment();
+                this.getSupportActionBar().setTitle("PRT");
                 break;
             case 3:
                 objfragment = new buses_Fragment();
+                setTitle("Buses");
                 break;
             case 4:
                 objfragment =  new map_Fragment();
+                setTitle("Map");
                 break;
             case 5:
-                objfragment = new sports_Fragment();
+                objfragment = new events_Fragment();
+                setTitle("News");
                 break;
             case 6:
-                objfragment = new news_Fragment();
+                objfragment = new help_Fragment();
+                setTitle("Events");
                 break;
             case 7:
-                objfragment = new events_Fragment();
+                objfragment = new settings_Fragment();
+                setTitle("Help");
                 break;
+
 
         }
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -79,7 +90,7 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.title_section6);
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
@@ -88,19 +99,19 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_section3);
                 break;
             case 4:
-                mTitle = "BUSES";
+                mTitle = getString(R.string.title_section4);
                 break;
             case 5:
-                mTitle = "MAP";
+                mTitle = getString(R.string.title_section5);
                 break;
             case 6:
-                mTitle = "SPORTS";
+                mTitle = getString(R.string.title_section7);
                 break;
             case 7:
-                mTitle = "NEWS";
+                mTitle = getString(R.string.title_section8);
                 break;
             case 8:
-                mTitle = "EVENTS";
+                mTitle = getString(R.string.title_section9);
                 break;
         }
     }

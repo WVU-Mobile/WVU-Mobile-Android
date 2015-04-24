@@ -21,6 +21,7 @@
     <color name="DarkestBlueColor">#001528</color>
     <color name="DarkestBlueColor2">#012241</color>
     <color name="ColorWhite">#FFFFFF</color>
+    <color name="CellBlue">#19324B</color>
     <color name="Default">#EBD38C</color>
 
 </resources>

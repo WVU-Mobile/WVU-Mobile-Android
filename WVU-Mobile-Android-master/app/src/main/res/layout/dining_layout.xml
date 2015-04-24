@@ -12,7 +12,7 @@
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/DarkBlueColor"
+                android:background="@color/CellBlue"
                 android:id="@+id/diningHall_text"
                 android:layout_weight="0">
 
@@ -21,7 +21,9 @@
                     android:text="DINING HALLS"
                     android:id="@+id/dh_text"
                     android:textColor="@color/ColorGold"
-                    android:background="@color/DarkBlueColor" />
+                    android:background="@color/CellBlue"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp" />
             </TableRow>
 
             <TableRow
@@ -43,11 +45,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/drawer_list_selector"
                     android:text="Cafe Evansdale"
                     android:id="@+id/textView2"
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" />
 
             </TableRow>
 
@@ -71,7 +75,8 @@
                     android:text="Summit Cafe"
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" />
                 </TableRow>
 
             <TableRow
@@ -94,7 +99,8 @@
                     android:text="Arnold's Diner"
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" />
                 </TableRow>
 
             <TableRow
@@ -117,7 +123,8 @@
                     android:text="Boreman Bistro"
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" />
                 </TableRow>
 
             <TableRow
@@ -140,7 +147,8 @@
                     android:text="Terrace Room"
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" />
                 </TableRow>
 
             <TableRow
@@ -164,11 +172,12 @@
                     android:text="Hatfields"
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" />
 
                 </TableRow>
 
-            <TableRow
+        <!--    <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/retailLocations_text"
@@ -482,6 +491,6 @@
                     android:textColor="@color/ColorGold"
                     android:textSize="20sp"
                     android:layout_gravity="center_vertical" />
-                </TableRow>
+                </TableRow> -->
     </TableLayout>
 </ScrollView>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="@color/DarkestBlueColor"
+    android:layout_weight="1"
+    android:nestedScrollingEnabled="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:background="@color/DarkestBlueColor">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="EMERGENCY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="3"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CellBlue">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Morgantown Police"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/CellBlue"
+            android:lines="2"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="(304)284-7522"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/CellBlue"
+            android:lines="2"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="10dp" />
+    </TableRow>
+    <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+     <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="University Police"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304)293-2677"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="WVU Emergency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1-800-988-0096"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="end"
+            android:divider="@color/ColorPRTGray1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_span="2">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/help_content1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/ColorPRTGray2"
+                android:layout_marginLeft="10dp"
+                android:lines="3"
+                android:gravity="left" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="RAPE &amp; DOMESTIC VIOLENCE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/ColorPRTGray2"
+                android:layout_marginLeft="10dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Information Center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304) 292-5100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="SUICIDE PREVENTION"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="3"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="24/7 Hotline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1-800-784-2433"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Veterans Hotline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1-800-273-TALK"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="end"
+            android:divider="@color/ColorPRTGray1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_span="2">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/help_content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ColorPRTGray2"
+                    android:layout_marginLeft="10dp"
+                    android:lines="3"
+                    android:gravity="left" />
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="COUNSELING &amp; PSYCHOLOGICAL SERVICES"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ColorPRTGray2"
+                    android:layout_marginLeft="10dp"
+                    android:lines="2"
+                    android:gravity="bottom|left"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Carruth Center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304) 293-6997"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="end"
+            android:divider="@color/ColorPRTGray1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_span="2">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/help_content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ColorPRTGray2"
+                    android:layout_marginLeft="10dp"
+                    android:lines="4"
+                    android:gravity="left" />
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="OTHER SERVICES"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ColorPRTGray2"
+                    android:layout_marginLeft="10dp"
+                    android:lines="2"
+                    android:gravity="bottom|left"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Environmental Health"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304)293-3792"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Health Sciences"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304)293-6924"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Faculty-Staff Assit."
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304)293-5590"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Parents Club"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1-800-WVU-0096"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Student Health"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="(304)285-7200"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+    </TableLayout>
+
+</ScrollView>

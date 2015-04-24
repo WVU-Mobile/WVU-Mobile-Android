@@ -9,18 +9,18 @@
         <dex dex="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-aa0824ddbd9238b3ef193b9505c4ffbb2cbb2305.jar" />
     </item>
     <item
-        jar="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-15e99b12e82269b23af3e5e664d578a1d809eebd.jar" />
-    </item>
-    <item
         jar="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
         <dex dex="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/classes-0350babe4b930350b88e33a7d3dc8d6cdb4ef9ec.jar" />
+    </item>
+    <item
+        jar="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-15e99b12e82269b23af3e5e664d578a1d809eebd.jar" />
     </item>
     <item
         jar="/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"

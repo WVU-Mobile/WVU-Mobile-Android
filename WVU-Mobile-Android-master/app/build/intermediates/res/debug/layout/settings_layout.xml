@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    android:background="@color/DarkestBlueColor2"
+    android:nestedScrollingEnabled="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:background="@color/DarkestBlueColor">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkestBlueColor"
+            android:paddingTop="40dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Night Mode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ToggleButton
+                android:background="@color/ColorGold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:id="@+id/nightmodetoggle"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="end"
+            android:divider="@color/ColorPRTGray1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_span="2">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/settingsnightmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ColorPRTGray2"
+                    android:layout_marginLeft="10dp"
+                    android:lines="2"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="CREDITS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ColorPRTGray2"
+                    android:layout_marginLeft="10dp"
+                    android:lines="2"
+                    android:gravity="center_vertical|left"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Kate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/follow"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ricky"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/follow"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Jeremy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/follow"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Corey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/follow"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Thomas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+        <TableRow
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/settingstwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="3"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:textSize="15sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="WVU MOBILE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="3"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Like on Facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/like"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"
+            android:layout_marginLeft="10dp" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Like on Twitter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/follow"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/settingsfollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="3"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:textSize="15sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="SEND FEEDBACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="3"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/CellBlue">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="wvumobileapp@gmail.com"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/CellBlue"
+                android:lines="2"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:paddingBottom="1dp"
+            android:background="@color/ColorWhite"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/settingsfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorPRTGray2"
+                android:lines="4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:textSize="15sp"
+                android:paddingTop="10dp" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/settings_layout.xml -->

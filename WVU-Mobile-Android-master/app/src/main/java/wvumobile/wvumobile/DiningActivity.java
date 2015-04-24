@@ -1,5 +1,6 @@
 package wvumobile.wvumobile;
 
+import android.content.Context;
 import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -9,17 +10,88 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class DiningActivity extends ActionBarActivity {
+public class DiningActivity extends ActionBarActivity implements  View.OnClickListener
+{
 
     public final static String BACK_MESSAGE = "wvumobile.wvumobile.BACKMESSAGE";
 
+    private MapView mMapView;
+    private GoogleMap mMap;
+
+    private String diningHallTitle = "";
+    private Button menuSelect;
+    private Button infoSelect;
+
+    private TextView breakfast_Text;
+    private TextView h_breakfast_Text;
+    private TextView breakfastAS_Text;
+    private TextView lunch_Text;
+    private TextView h_lunch_Text;
+    private TextView lunchAS_Text;
+    private TextView dinner_Text;
+    private TextView h_dinner_Text;
+    private TextView dinnerAS_Text;
+
+    private TextView dDescriptionText;
+    private TextView dHoursText;
+
+    private TableRow breakfastTitle;
+    private TableRow h_breakfastTitle;
+    private TableRow breakfastASTitle;
+    private TableRow lunchTitle;
+    private TableRow h_lunchTitle;
+    private TableRow lunchASTitle;
+    private TableRow dinnerTitle;
+    private TableRow h_dinnerTitle;
+    private TableRow dinnerASTitle;
+
+    private TableRow breakfastRow;
+    private TableRow h_breakfastRow;
+    private TableRow breakfastASRow;
+    private TableRow lunchRow;
+    private TableRow h_lunchRow;
+    private TableRow lunchASRow;
+    private TableRow dinnerRow;
+    private TableRow h_dinnerRow;
+    private TableRow dinnerASRow;
+
+    private TableRow dMapRow;
+    private TableRow dDescriptionRow;
+    private TableRow dHourTitleRow;
+    private TableRow dHoursRow;
+
+    private LatLng cafeEvansdalelatlon = new LatLng(39.648935, -79.966303);
+    private LatLng summitCafelatlon = new LatLng(39.638829, -79.956533);
+    private LatLng arnoldsDinerlatlon = new LatLng(39.632444, -79.950319);
+    private LatLng boremanBistrolatlon = new LatLng(39.633060, -79.952642);
+    private LatLng terraceRoomlatlon = new LatLng(39.635357, -79.952755);
+    private LatLng hatfieldslatlon = new LatLng(39.634752, -79.953916);
+
+
+
+
+
+
     private String jsonURL = null;
+    private int locationID = 0;
+
     String breakfastItems = "";
     String h_breakfastItems = "";
     String breakfastASItems= "";
@@ -35,7 +107,6 @@ public class DiningActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         if(savedInstanceState != null)
         {
-            System.out.println("I am here.");
             return;
         }
         else
@@ -50,47 +121,78 @@ public class DiningActivity extends ActionBarActivity {
             h_dinnerItems = "";
             dinnerASItems = "";
 
-            Intent intent = getIntent();
-            jsonURL = intent.getStringExtra(dining_Fragment.EXTRA_MESSAGE);
             setContentView(R.layout.activity_dining);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
+
+            Intent intent = getIntent();
+
+            MapsInitializer.initialize(getApplicationContext());
+            mMapView = (MapView) findViewById(R.id.d_map);
+            mMapView.onCreate(savedInstanceState);
+
+
+            jsonURL = intent.getStringExtra(dining_Fragment.EXTRA_MESSAGE);
+            locationID = intent.getIntExtra(dining_Fragment.EXTRA_MESSAGE2, 0);
+
+            System.out.println("Location ID: "+locationID);
             JSONParser jParse = new JSONParser();
 
+
+            //Getting buttons
+            menuSelect = (Button) findViewById(R.id.dining_menuButton);
+            menuSelect.setOnClickListener(this);
+            infoSelect = (Button) findViewById(R.id.dining_infoButton);
+            infoSelect.setOnClickListener(this);
+
             //Getting each row within the menu as a TextView
-            TextView breakfast_Text = (TextView) findViewById(R.id.d_breakfast);
-            TextView h_breakfast_Text = (TextView) findViewById(R.id.d_hbreakfast);
-            TextView breakfastAS_Text = (TextView) findViewById(R.id.d_breakfast_as);
-            TextView lunch_Text = (TextView) findViewById(R.id.d_lunch);
-            TextView h_lunch_Text = (TextView) findViewById(R.id.d_hlunch);
-            TextView lunchAS_Text = (TextView) findViewById(R.id.d_lunch_as);
-            TextView dinner_Text = (TextView) findViewById(R.id.d_dinner);
-            TextView h_dinner_Text = (TextView) findViewById(R.id.d_hdinner);
-            TextView dinnerAS_Text = (TextView) findViewById(R.id.d_dinner_as);
+            breakfast_Text = (TextView) findViewById(R.id.d_breakfast);
+            h_breakfast_Text = (TextView) findViewById(R.id.d_hbreakfast);
+            breakfastAS_Text = (TextView) findViewById(R.id.d_breakfast_as);
+            lunch_Text = (TextView) findViewById(R.id.d_lunch);
+            h_lunch_Text = (TextView) findViewById(R.id.d_hlunch);
+            lunchAS_Text = (TextView) findViewById(R.id.d_lunch_as);
+            dinner_Text = (TextView) findViewById(R.id.d_dinner);
+            h_dinner_Text = (TextView) findViewById(R.id.d_hdinner);
+            dinnerAS_Text = (TextView) findViewById(R.id.d_dinner_as);
 
             //Getting each row title as a TableRow
-            TableRow breakfastTitle = (TableRow) findViewById(R.id.r_breakfasttitle);
-            TableRow h_breakfastTitle = (TableRow) findViewById(R.id.r_hbreakfasttitle);
-            TableRow breakfastASTitle = (TableRow) findViewById(R.id.r_breakfast_astitle);
-            TableRow lunchTitle = (TableRow) findViewById(R.id.r_lunchtitle);
-            TableRow h_lunchTitle = (TableRow) findViewById(R.id.r_hlunchtitle);
-            TableRow lunchASTitle = (TableRow) findViewById(R.id.r_lunch_astitle);
-            TableRow dinnerTitle = (TableRow) findViewById(R.id.r_dinnertitle);
-            TableRow h_dinnerTitle = (TableRow) findViewById(R.id.r_hdinnertitle);
-            TableRow dinnerASTitle = (TableRow) findViewById(R.id.r_dinner_astitle);
+            breakfastTitle = (TableRow) findViewById(R.id.r_breakfasttitle);
+            h_breakfastTitle = (TableRow) findViewById(R.id.r_hbreakfasttitle);
+            breakfastASTitle = (TableRow) findViewById(R.id.r_breakfast_astitle);
+            lunchTitle = (TableRow) findViewById(R.id.r_lunchtitle);
+            h_lunchTitle = (TableRow) findViewById(R.id.r_hlunchtitle);
+            lunchASTitle = (TableRow) findViewById(R.id.r_lunch_astitle);
+            dinnerTitle = (TableRow) findViewById(R.id.r_dinnertitle);
+            h_dinnerTitle = (TableRow) findViewById(R.id.r_hdinnertitle);
+            dinnerASTitle = (TableRow) findViewById(R.id.r_dinner_astitle);
 
             //Getting each meal section as a TableRow
-            TableRow breakfastRow = (TableRow) findViewById(R.id.r_breakfast);
-            TableRow h_breakfastRow = (TableRow) findViewById(R.id.r_hbreakfast);
-            TableRow breakfastASRow = (TableRow) findViewById(R.id.r_breakfast_as);
-            TableRow lunchRow = (TableRow) findViewById(R.id.r_lunch);
-            TableRow h_lunchRow = (TableRow) findViewById(R.id.r_hlunch);
-            TableRow lunchASRow = (TableRow) findViewById(R.id.r_lunch_as);
-            TableRow dinnerRow = (TableRow) findViewById(R.id.r_dinner);
-            TableRow h_dinnerRow = (TableRow) findViewById(R.id.r_hdinner);
-            TableRow dinnerASRow = (TableRow) findViewById(R.id.r_dinner_as);
+            breakfastRow = (TableRow) findViewById(R.id.r_breakfast);
+            h_breakfastRow = (TableRow) findViewById(R.id.r_hbreakfast);
+            breakfastASRow = (TableRow) findViewById(R.id.r_breakfast_as);
+            lunchRow = (TableRow) findViewById(R.id.r_lunch);
+            h_lunchRow = (TableRow) findViewById(R.id.r_hlunch);
+            lunchASRow = (TableRow) findViewById(R.id.r_lunch_as);
+            dinnerRow = (TableRow) findViewById(R.id.r_dinner);
+            h_dinnerRow = (TableRow) findViewById(R.id.r_hdinner);
+            dinnerASRow = (TableRow) findViewById(R.id.r_dinner_as);
+
+            //Getting the info section
+
+            dMapRow = (TableRow) findViewById(R.id.d_mapRow);
+            dDescriptionRow = (TableRow) findViewById(R.id.d_diningdescriptionrow);
+            dHourTitleRow = (TableRow) findViewById(R.id.dining_hours);
+            dHoursRow = (TableRow) findViewById(R.id.d_hoursrow);
+            dDescriptionText = (TextView) findViewById(R.id.d_diningdescription);
+            dHoursText = (TextView) findViewById(R.id.d_HourText);
+
+            dMapRow.setVisibility(View.GONE);
+            dDescriptionRow.setVisibility(View.GONE);
+            dHourTitleRow.setVisibility(View.GONE);
+            dHoursRow.setVisibility(View.GONE);
 
             try {
 
@@ -186,8 +288,51 @@ public class DiningActivity extends ActionBarActivity {
                 breakfast_Text.setGravity(View.TEXT_ALIGNMENT_CENTER);
             }
 
-        }
+            setUpMapIfNeeded();
 
+            if(locationID == 1)
+            {
+                diningHallTitle = "Cafe Evansdale";
+                updateMap(cafeEvansdalelatlon, diningHallTitle);
+                dDescriptionText.setText(getResources().getText(R.string.cafeevansdaleDescription));
+                dHoursText.setText(getResources().getText(R.string.cafeevansdalehours));
+            }
+            else if(locationID == 2)
+            {
+                diningHallTitle = "Summit Cafe";
+                updateMap(summitCafelatlon, diningHallTitle);
+                dDescriptionText.setText(getResources().getText(R.string.summitcafeDescription));
+                dHoursText.setText(getResources().getText(R.string.summithours));
+            }
+            else if(locationID == 3)
+            {
+                diningHallTitle = "Arnold's Diner";
+                updateMap(arnoldsDinerlatlon, diningHallTitle);
+                dDescriptionText.setText(getResources().getText(R.string.arnoldsdinerDescription));
+                dHoursText.setText(getResources().getText(R.string.arnoldhours));
+            }
+            else if(locationID == 4)
+            {
+                diningHallTitle = "Boreman Bistro";
+                updateMap(boremanBistrolatlon, diningHallTitle);
+                dDescriptionText.setText(getResources().getText(R.string.boremanbistroDescription));
+                dHoursText.setText(getResources().getText(R.string.boremandhours));
+            }
+            else if(locationID == 5)
+            {
+                diningHallTitle = "Terrace Room";
+                updateMap(terraceRoomlatlon, diningHallTitle);
+                dDescriptionText.setText(getResources().getText(R.string.terraceroomDescription));
+                dHoursText.setText(getResources().getText(R.string.terraceroomhours));
+            }
+            else if(locationID == 6)
+            {
+                diningHallTitle = "Hatfields";
+                updateMap(hatfieldslatlon, diningHallTitle);
+                dDescriptionText.setText(getResources().getText(R.string.hatfieldsDescription));
+                dHoursText.setText(getResources().getText(R.string.hatfieldsHours));
+            }
+        }
     }
 
     @Override
@@ -290,23 +435,142 @@ public class DiningActivity extends ActionBarActivity {
             dinnerASItems = dinnerASItems.substring(0, dinnerASItems.length()-1);
         }
     }
-    @Override
-    public void onBackPressed()
+
+    public void setUpMenuView()
+    {
+        //hiding all info elements
+        dMapRow.setVisibility(View.GONE);
+        dDescriptionRow.setVisibility(View.GONE);
+        dHourTitleRow.setVisibility(View.GONE);
+        dHoursRow.setVisibility(View.GONE);
+
+        //making all menu rows visible
+        breakfastTitle.setVisibility(View.VISIBLE);
+        h_breakfastTitle.setVisibility(View.VISIBLE);
+        breakfastASTitle.setVisibility(View.VISIBLE);
+        lunchTitle.setVisibility(View.VISIBLE);
+        h_lunchTitle.setVisibility(View.VISIBLE);
+        lunchASTitle.setVisibility(View.VISIBLE);
+        dinnerTitle.setVisibility(View.VISIBLE);
+        h_dinnerTitle.setVisibility(View.VISIBLE);
+        dinnerASTitle.setVisibility(View.VISIBLE);
+        breakfastRow.setVisibility(View.VISIBLE);
+        h_breakfastRow.setVisibility(View.VISIBLE);
+        breakfastASRow.setVisibility(View.VISIBLE);
+        lunchRow.setVisibility(View.VISIBLE);
+        h_lunchRow.setVisibility(View.VISIBLE);
+        lunchASRow.setVisibility(View.VISIBLE);
+        dinnerRow.setVisibility(View.VISIBLE);
+        h_dinnerRow.setVisibility(View.VISIBLE);
+        dinnerASRow.setVisibility(View.VISIBLE);
+    }
+
+    public void setUpInfoView()
+    {
+        //making all info elements visible
+        dMapRow.setVisibility(View.VISIBLE);
+        dDescriptionRow.setVisibility(View.VISIBLE);
+        dHourTitleRow.setVisibility(View.VISIBLE);
+        dHoursRow.setVisibility(View.VISIBLE);
+
+        //hiding all menu rows
+
+        breakfastTitle.setVisibility(View.GONE);
+        h_breakfastTitle.setVisibility(View.GONE);
+        breakfastASTitle.setVisibility(View.GONE);
+        lunchTitle.setVisibility(View.GONE);
+        h_lunchTitle.setVisibility(View.GONE);
+        lunchASTitle.setVisibility(View.GONE);
+        dinnerTitle.setVisibility(View.GONE);
+        h_dinnerTitle.setVisibility(View.GONE);
+        dinnerASTitle.setVisibility(View.GONE);
+
+        breakfastRow.setVisibility(View.GONE);
+        h_breakfastRow.setVisibility(View.GONE);
+        breakfastASRow.setVisibility(View.GONE);
+        lunchRow.setVisibility(View.GONE);
+        h_lunchRow.setVisibility(View.GONE);
+        lunchASRow.setVisibility(View.GONE);
+        dinnerRow.setVisibility(View.GONE);
+        h_dinnerRow.setVisibility(View.GONE);
+        dinnerASRow.setVisibility(View.GONE);
+    }
+
+    public void onClick(View v)
+    {
+        switch(v.getId())
+        {
+            case R.id.dining_menuButton:
+                menuSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray1));
+                infoSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray2));
+                setUpMenuView();
+                break;
+            case R.id.dining_infoButton:
+                menuSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray2));
+                infoSelect.setBackgroundColor(getResources().getColor(R.color.ColorPRTGray1));
+                setUpInfoView();
+                break;
+            default:
+            break;
+        }
+    }
+
+    private void setUpMapIfNeeded()
+    {
+        if(mMap == null)
+        {
+            mMap = ((MapView) findViewById(R.id.d_map)).getMap();
+            if(mMap!= null)
+            {
+                setUpMap();
+            }
+        }
+    }
+    //@Override
+    /*public void onBackPressed()
     {
 
        Intent intent = new Intent(DiningActivity.this,MainActivity.class);
 
         intent.putExtra(BACK_MESSAGE,"Check");
         startActivity(intent);
+    }*/
+
+
+    private void setUpMap()
+    {
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cafeEvansdalelatlon, 13));
+    }
+    private void updateMap(LatLng dlatlng, String dtitle)
+    {
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(dlatlng, 13));
+        Marker marker = mMap.addMarker(new MarkerOptions().position(dlatlng).title(dtitle));
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        mMapView.onResume();
+    }
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        mMapView.onPause();
     }
     @Override
     protected void onDestroy()
     {
         super.onDestroy();
+        mMapView.onDestroy();
         /*Intent intent = new Intent(DiningActivity.this,MainActivity.class);
 
         intent.putExtra(BACK_MESSAGE,"Check");
         startActivity(intent);*/
 
     }
+
 }

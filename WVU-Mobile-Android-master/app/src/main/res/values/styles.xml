@@ -5,6 +5,13 @@
         <item name="colorPrimary">@color/DarkBlueColor</item>
         <item name="colorPrimaryDark">@color/DarkestBlueColor</item>
         <item name="android:actionMenuTextColor">@color/ColorGold</item>
+        <item name="android:textColor">@color/ColorGold</item>
+        <item name="android:background">@color/DarkestBlueColor</item>
+    </style>
+    <style name="SecondaryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionMenuTextColor">@color/ColorGold</item>
+        <item name="android:textColor">@color/ColorGold</item>
+        <item name="android:background">@color/DarkBlueColor2</item>
     </style>
 
 

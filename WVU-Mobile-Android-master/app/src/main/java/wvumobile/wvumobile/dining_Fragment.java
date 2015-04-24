@@ -29,6 +29,7 @@ import java.util.Calendar;
 public class dining_Fragment extends Fragment implements  View.OnClickListener
 {
     public final static String EXTRA_MESSAGE = "wvumobile.wvumobile.MESSAGE";
+    public final static String EXTRA_MESSAGE2 = "wvumobile.wvumobile.MESSAGE2";
 
     View rootview;
     private TableRow row_CE;
@@ -60,9 +61,6 @@ public class dining_Fragment extends Fragment implements  View.OnClickListener
         row_HF.setOnClickListener(this);
 
         return rootview;
-
-
-
     }
 
     public void onClick(View v)
@@ -108,6 +106,7 @@ public class dining_Fragment extends Fragment implements  View.OnClickListener
 
         }
         intent.putExtra(EXTRA_MESSAGE, urlMessage);
+        intent.putExtra(EXTRA_MESSAGE2, locationID);
         startActivity(intent);
     }
 

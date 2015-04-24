@@ -1,76 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-    android:id="@+id/prt_view">
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    android:background="@color/DarkestBlueColor2">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:background="@color/DarkestBlueColor2">
 
         <TableRow
             android:background="@color/ColorGreen"
-            android:layout_height="0px"
-            android:layout_width="0px"
-            android:layout_weight="0"
-            android:gravity="center_vertical|top"
-            android:id="@+id/prt_Img_background">
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/prt_Img_background"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp">
             <ImageView
                 android:id="@+id/prt_status_image"
                 android:src="@drawable/check"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_weight="0"
-                android:cropToPadding="true"
-                android:maxHeight="10dp"
-                android:maxWidth="10dp" />
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@color/ColorGreen" />
         </TableRow>
 
         <TableRow
             android:background="@color/ColorPRTGray1"
-            android:layout_width="0px"
-            android:layout_height="0px"
-            android:layout_weight="0.25"
-            android:gravity="center"
-            android:id="@+id/prt_status_background">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/prt_status_background"
+            android:paddingBottom="2.5dp"
+            android:paddingTop="2.5dp">
             <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/online"
                 android:textColor="@color/ColorGreen"
-                android:textSize="37sp"
+                android:id="@+id/prt_status_text"
+                android:background="@color/ColorPRTGray1"
                 android:textStyle="bold"
-                android:paddingTop="3dip"
-                android:gravity="center"
-                android:id="@+id/prt_status_text" />
+                android:lines="1"
+                android:textSize="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
 
         </TableRow>
 
         <TableRow
-            android:background="@color/DarkestBlueColor"
-            android:layout_width="0px"
-            android:layout_height="0px"
-
-            android:layout_weight="3.2"
+            android:background="@color/DarkBlueColor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:id="@+id/prt_schedule_background">
+            android:id="@+id/prt_schedule_background"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
             <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/status"
                 android:textColor="@color/ColorGold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:gravity="center"
-                android:id="@+id/prt_schedule_text" />
+                android:id="@+id/prt_schedule_text"
+                android:background="@color/DarkBlueColor2"
+                android:textSize="25dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
         </TableRow>
         <TableRow
-            android:background="@color/ColorPrimaryDark"
-            android:layout_width="0px"
-            android:layout_height="0px"
-            android:layout_weight="2.1"
+            android:background="@color/DarkestBlueColor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:id="@+id/prt_hours_background">
             <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/PRT_hours"
                 android:textColor="@color/ColorGold"
-                android:layout_weight="1"
-                android:textSize="20sp"
                 android:gravity="center"
-                android:id="@+id/prt_hours_text" />
+                android:id="@+id/prt_hours_text"
+                android:layout_width="wrap_content"
+                android:lines="5" />
         </TableRow>
-    </TableLayout><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/prt_layout.xml -->
+    </TableLayout>
+</ScrollView><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/prt_layout.xml -->

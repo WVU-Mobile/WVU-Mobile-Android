@@ -8,4 +8,5 @@
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp"
         tools:context=".NavigationDrawerFragment"
-        android:background="@color/DarkestBlueColor"/>
+        android:background="@color/DarkestBlueColor"
+        android:paddingTop="10dp" />

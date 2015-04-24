@@ -1,14 +1,442 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:clickable="true"
-    android:gravity="center_horizontal"
-    android:background="@color/ColorGold">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/busesMain_view"
+        android:isScrollContainer="true">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_1"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Buses"
-        android:id="@+id/textView" />
-</RelativeLayout><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/buses_layout.xml -->
+            <ImageView
+                android:background="@drawable/drawer_list_selector"
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:background="@drawable/drawer_list_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campus PM (1)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_2"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downtown PM Mall (2)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_3"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Line (3)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_4"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orange Line (4)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_5"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold Line (6)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_6"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red Line (7)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_7"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tyrone (8)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_8"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purple Line (9)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_9"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cassvile (11)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_10"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue Line (12)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_11"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crown (13)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_12"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mountain Heights (14)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_13"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grafton Raod (15)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_14"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink Line (16)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_15"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="West Run (30)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_16"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue &amp; Gold (38)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_17"
+            android:background="@drawable/drawer_list_selector"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+
+            <ImageView
+                android:src="@drawable/offline"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valley View (44)"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/businfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorPRTGray1"
+                android:lines="4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:textSize="14sp"
+                android:paddingTop="10dp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+</ScrollView><!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/buses_layout.xml -->

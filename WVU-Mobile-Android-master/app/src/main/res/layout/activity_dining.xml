@@ -21,40 +21,45 @@ tools:context="wvumobile.wvumobile.DiningActivity">
     <TableRow
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/CE_menu_info_row"
+        android:id="@+id/dining_buttonRow"
         android:nestedScrollingEnabled="true">
 
         <Button
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="M E N U"
-            android:id="@+id/CE_menu_button_text"
-            android:textColor="@color/ColorWhite"
-            android:background="@color/ColorPRTGray1"
-            android:nestedScrollingEnabled="true"
-            android:layout_width="0dp"
-            android:layout_weight="1" />
-        <Button
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="I N F O"
-            android:id="@+id/CE_info_button_text"
+            android:id="@+id/dining_menuButton"
             android:textColor="@color/ColorWhite"
             android:background="@color/ColorPRTGray2"
             android:nestedScrollingEnabled="true"
             android:layout_width="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_height="40dp" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I N F O"
+            android:id="@+id/dining_infoButton"
+            android:textColor="@color/ColorWhite"
+            android:background="@color/ColorPRTGray1"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp" />
     </TableRow>
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor2"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_breakfasttitle">
 
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="BREAKFAST"
+            android:background="@color/CellBlue"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" />
     </TableRow>
 
     <TableRow
@@ -65,25 +70,31 @@ tools:context="wvumobile.wvumobile.DiningActivity">
 
         <TextView
             android:text="@string/MenuPlaceholder"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/ColorGold"
             android:id="@+id/d_breakfast"
-            android:layout_span="2"/>
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor2"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_hbreakfasttitle">
 
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="HEALTHY 'U' BREAKFAST"
+            android:background="@color/CellBlue"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
     <TableRow
@@ -95,23 +106,30 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         <TextView
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/d_hbreakfast" />
+            android:id="@+id/d_hbreakfast"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkestBlueColor2"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_breakfast_astitle">
 
         <TextView
+            android:background="@color/CellBlue"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="BREAKFAST ACTION STATION"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
 
@@ -122,25 +140,32 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_breakfast_as">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_breakfast_as" />
+            android:id="@+id/d_breakfast_as"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkBlueColor"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_lunchtitle">
 
         <TextView
+            android:background="@color/CellBlue"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="LUNCH"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
     <TableRow
@@ -150,25 +175,32 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_lunch">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_lunch" />
+            android:id="@+id/d_lunch"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkBlueColor"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_hlunchtitle">
 
         <TextView
+            android:background="@color/CellBlue"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="HEALTHY 'U' LUNCH"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
 
@@ -179,25 +211,32 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hlunch">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_hlunch" />
+            android:id="@+id/d_hlunch"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkBlueColor"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_lunch_astitle">
 
         <TextView
+            android:background="@color/CellBlue"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="LUNCH ACTION STATION"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
 
@@ -208,25 +247,32 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_lunch_as">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_lunch_as" />
+            android:id="@+id/d_lunch_as"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkBlueColor"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
         android:id="@+id/r_dinnertitle">
 
         <TextView
+            android:background="@color/CellBlue"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="DINNER"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
 
@@ -237,25 +283,31 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_dinner">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_dinner" />
+            android:id="@+id/d_dinner"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkBlueColor"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
-        android:transitionGroup="false"
         android:id="@+id/r_hdinnertitle">
 
         <TextView
+            android:background="@color/CellBlue"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="HEALTH 'U' DINNER"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
 
@@ -266,26 +318,32 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_hdinner">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_hdinner" />
+            android:id="@+id/d_hdinner"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/DarkBlueColor"
+        android:background="@color/CellBlue"
         android:nestedScrollingEnabled="true"
-        android:id="@+id/r_dinner_astitle"
-        android:longClickable="true">
+        android:id="@+id/r_dinner_astitle">
 
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="DINNER ACTION STATION"
             android:textColor="@color/ColorGold"
-            android:textStyle="bold" />
+            android:background="@color/CellBlue"
+            android:textStyle="bold"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </TableRow>
 
@@ -296,11 +354,75 @@ tools:context="wvumobile.wvumobile.DiningActivity">
         android:id="@+id/r_dinner_as">
 
         <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/MenuPlaceholder"
             android:textColor="@color/ColorGold"
-            android:id="@+id/d_dinner_as" />
+            android:id="@+id/d_dinner_as"
+            android:lineSpacingExtra="7sp"
+            android:layout_span="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />/>
 
+    </TableRow>
+    <TableRow
+        android:id="@+id/d_mapRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/d_map"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_span="1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPRTGray2"
+        android:id="@+id/d_diningdescriptionrow"
+        android:gravity="end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cafeevansdaleDescription"
+            android:textColor="@color/ColorBlack"
+            android:background="@color/ColorPRTGray2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/d_diningdescription" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/CellBlue"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/dining_hours">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HOURS"
+            android:textColor="@color/ColorGold"
+            android:background="@color/CellBlue"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkestBlueColor"
+        android:id="@+id/d_hoursrow"
+        android:gravity="end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cafeevansdalehours"
+            android:textColor="@color/ColorGold"
+            android:background="@color/DarkestBlueColor"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:id="@+id/d_HourText" />
     </TableRow>
 </TableLayout>
 </ScrollView>

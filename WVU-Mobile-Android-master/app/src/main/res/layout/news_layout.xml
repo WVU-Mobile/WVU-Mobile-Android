@@ -1,14 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:clickable="true"
-    android:gravity="center_horizontal"
-    android:background="@color/ColorGold">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="News"
-        android:id="@+id/textView" />
-</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/diningMain_view"
+        android:isScrollContainer="true">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkBlueColor"
+            android:id="@+id/diningHall_text"
+            android:layout_weight="0">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Current News"
+                android:id="@+id/n_text"
+                android:textColor="@color/ColorGold"
+                android:background="@color/DarkBlueColor" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_item1"
+            android:background="@color/DarkestBlueColor"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+            <ImageView
+                android:id="@+id/none1"
+                android:src="@drawable/evansdale"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/n_item1_title"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_item2"
+            android:background="@color/DarkestBlueColor"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false">
+            <ImageView
+                android:id="@+id/none2"
+                android:src="@drawable/evansdale"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/n_item2_title"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_item3"
+            android:background="@color/DarkestBlueColor"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/none3"
+                android:src="@drawable/boreman"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/n_item3_title"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_item4"
+            android:background="@color/DarkestBlueColor"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/none4"
+                android:src="@drawable/evansdale"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/n_item4_title"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_item5"
+            android:background="@color/DarkestBlueColor"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/none5"
+                android:src="@drawable/boreman"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/n_item5_title"
+                android:textColor="@color/ColorGold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

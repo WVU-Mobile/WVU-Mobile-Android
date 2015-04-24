@@ -79,7 +79,7 @@ public class NavigationDrawerFragment extends Fragment {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
         mUserLearnedDrawer = sp.getBoolean(PREF_USER_LEARNED_DRAWER, false);
 
-        Intent intent = getActivity().getIntent();
+        /*Intent intent = getActivity().getIntent();
         if(intent != null) {
             String key = intent.getStringExtra(DiningActivity.BACK_MESSAGE);
             if(key != null) {
@@ -87,7 +87,7 @@ public class NavigationDrawerFragment extends Fragment {
                     mCurrentSelectedPosition = 1;
                 }
             }
-        }
+        }*/
         if (savedInstanceState != null) {
             mCurrentSelectedPosition = savedInstanceState.getInt(STATE_SELECTED_POSITION);
             mFromSavedInstanceState = true;
@@ -114,14 +114,15 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-        String[] values = new String[]{getString(R.string.title_section1),
+        String[] values = new String[]{getString(R.string.title_section6),
                 getString(R.string.title_section2),
                 getString(R.string.title_section3),
                 getString(R.string.title_section4),
                 getString(R.string.title_section5),
-                getString(R.string.title_section6),
                 getString(R.string.title_section7),
-                getString(R.string.title_section8)};
+                getString(R.string.title_section8),
+                getString(R.string.title_section9)};
+
         Navigation_adapter adapter = new Navigation_adapter(getActionBar().getThemedContext(), values);
         mDrawerListView.setAdapter(adapter);
         /*mDrawerListView.setAdapter(new ArrayAdapter<String>(getActionBar().getThemedContext(),
