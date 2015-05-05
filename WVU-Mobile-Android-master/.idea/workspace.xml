@@ -35,32 +35,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78dca412-c178-4bfe-9c16-f6b087bead39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drawer_list_selector2.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/home_Fragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/sports_Fragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sports_layout.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/busstop.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/DiningActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/DiningActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/wvumobile/wvumobile/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/wvumobile/wvumobile/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_bus.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_bus.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/buses_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/buses_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/buses_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/buses_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/dining_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/dining_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dining_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dining_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/events_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/events_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/help_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/help_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/map_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/map_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/news_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/news_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/prt_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/prt_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/settings_Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/settings_Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WVU-Mobile-Android-master.iws" />
@@ -89,136 +67,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BusActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BusActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7685" max-vertical-offset="8880">
-              <caret line="895" column="33" selection-start-line="895" selection-start-column="33" selection-end-line="895" selection-end-column="33" />
+            <state vertical-scroll-proportion="11.277174" vertical-offset="3375" max-vertical-offset="11835">
+              <caret line="1012" column="24" selection-start-line="1012" selection-start-column="24" selection-end-line="1012" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1003#1011#0" expanded="true" />
+                <element signature="e#1069#1077#0" expanded="true" />
                 <element signature="method#hideExtraRows#0;class#BusActivity#0" expanded="false" />
                 <element signature="method#setUpBusStops#0;class#BusActivity#0" expanded="false" />
-                <element signature="e#22615#22659#0" expanded="true" />
-                <element signature="e#23103#23147#0" expanded="true" />
-                <element signature="e#23790#23834#0" expanded="true" />
-                <element signature="e#24731#24775#0" expanded="true" />
-                <element signature="e#25391#25435#0" expanded="true" />
-                <element signature="e#26155#26199#0" expanded="true" />
-                <element signature="e#26698#26742#0" expanded="true" />
-                <element signature="e#27280#27324#0" expanded="true" />
-                <element signature="e#27796#27840#0" expanded="true" />
-                <element signature="e#28274#28319#0" expanded="true" />
-                <element signature="e#28946#28991#0" expanded="true" />
-                <element signature="e#29460#29505#0" expanded="true" />
-                <element signature="e#30057#30102#0" expanded="true" />
-                <element signature="e#30605#30650#0" expanded="true" />
-                <element signature="e#31215#31260#0" expanded="true" />
-                <element signature="e#32071#32116#0" expanded="true" />
-                <element signature="e#32723#32768#0" expanded="true" />
+                <element signature="e#21952#21996#0" expanded="true" />
+                <element signature="e#22440#22484#0" expanded="true" />
+                <element signature="e#23127#23171#0" expanded="true" />
+                <element signature="e#24068#24112#0" expanded="true" />
+                <element signature="e#24728#24772#0" expanded="true" />
+                <element signature="e#25492#25536#0" expanded="true" />
+                <element signature="e#26035#26079#0" expanded="true" />
+                <element signature="e#26617#26661#0" expanded="true" />
+                <element signature="e#27133#27177#0" expanded="true" />
+                <element signature="e#27611#27656#0" expanded="true" />
+                <element signature="e#28283#28328#0" expanded="true" />
+                <element signature="e#28797#28842#0" expanded="true" />
+                <element signature="e#29394#29439#0" expanded="true" />
+                <element signature="e#29942#29987#0" expanded="true" />
+                <element signature="e#30552#30597#0" expanded="true" />
+                <element signature="e#31408#31453#0" expanded="true" />
+                <element signature="e#32060#32105#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wvumobilestyle.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/wvumobilestyle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dimens.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="themes.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="570">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_bus.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bus.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.67004" vertical-offset="7322" max-vertical-offset="7860">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-              <folding>
-                <element signature="e#1932#1961#0" expanded="true" />
-                <element signature="e#3326#3358#0" expanded="true" />
-                <element signature="e#4589#4621#0" expanded="true" />
-                <element signature="e#5798#5830#0" expanded="true" />
-                <element signature="e#7007#7039#0" expanded="true" />
-                <element signature="e#8216#8248#0" expanded="true" />
-                <element signature="e#9425#9457#0" expanded="true" />
-                <element signature="e#10634#10666#0" expanded="true" />
-                <element signature="e#11843#11875#0" expanded="true" />
-                <element signature="e#13052#13084#0" expanded="true" />
-                <element signature="e#14262#14294#0" expanded="true" />
-                <element signature="e#15473#15505#0" expanded="true" />
-                <element signature="e#16684#16716#0" expanded="true" />
-                <element signature="e#17895#17927#0" expanded="true" />
-                <element signature="e#19106#19138#0" expanded="true" />
-                <element signature="e#20317#20349#0" expanded="true" />
-                <element signature="e#21528#21560#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
+      <file leaf-file-name="busstop.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/busstop.png">
+          <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-              <folding>
-                <element signature="e#1729#1757#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="offline.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/offline.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer_list_selector2.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/drawer_list_selector2.xml">
+      <file leaf-file-name="bus.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bus.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prt_Fragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/prt_Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1185">
+              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -842,10 +748,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/DiningActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/drawer_list_selector2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bus.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java" />
       </list>
     </option>
   </component>
@@ -1192,15 +1098,15 @@
     <key name="android.template.packageName">
       <recent name="wvumobile.wvumobile" />
     </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+      <recent name="wvumobile.wvumobile.MainActivity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout/Dining" />
-    </key>
-    <key name="android.template.parentActivityClass">
-      <recent name="" />
-      <recent name="wvumobile.wvumobile.MainActivity" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -1403,14 +1309,14 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33558178" sideWeight="0.6615509" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1365936" sideWeight="0.6615509" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4198988" sideWeight="0.7399031" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2463651" sideWeight="0.5012531" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.33844912" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.33844912" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1418,14 +1324,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2463651" sideWeight="0.49874687" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07419899" sideWeight="0.2907916" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21753794" sideWeight="0.2907916" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.6631664" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20573355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1450,11 +1356,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/check.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/stop.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1524,16 +1425,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/offline.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bus.png">
-      <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
@@ -1723,14 +1614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/prt_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1185">
-          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/dining_Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2392638" vertical-offset="1086" max-vertical-offset="1605">
@@ -1792,76 +1675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7685" max-vertical-offset="8880">
-          <caret line="895" column="33" selection-start-line="895" selection-start-column="33" selection-end-line="895" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1003#1011#0" expanded="true" />
-            <element signature="method#hideExtraRows#0;class#BusActivity#0" expanded="false" />
-            <element signature="method#setUpBusStops#0;class#BusActivity#0" expanded="false" />
-            <element signature="e#22615#22659#0" expanded="true" />
-            <element signature="e#23103#23147#0" expanded="true" />
-            <element signature="e#23790#23834#0" expanded="true" />
-            <element signature="e#24731#24775#0" expanded="true" />
-            <element signature="e#25391#25435#0" expanded="true" />
-            <element signature="e#26155#26199#0" expanded="true" />
-            <element signature="e#26698#26742#0" expanded="true" />
-            <element signature="e#27280#27324#0" expanded="true" />
-            <element signature="e#27796#27840#0" expanded="true" />
-            <element signature="e#28274#28319#0" expanded="true" />
-            <element signature="e#28946#28991#0" expanded="true" />
-            <element signature="e#29460#29505#0" expanded="true" />
-            <element signature="e#30057#30102#0" expanded="true" />
-            <element signature="e#30605#30650#0" expanded="true" />
-            <element signature="e#31215#31260#0" expanded="true" />
-            <element signature="e#32071#32116#0" expanded="true" />
-            <element signature="e#32723#32768#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/wvumobilestyle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="570">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/drawer_list_selector.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
@@ -1890,7 +1703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bus.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.67004" vertical-offset="7322" max-vertical-offset="7860">
+        <state vertical-scroll-proportion="-15.857768" vertical-offset="7322" max-vertical-offset="7860">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding>
             <element signature="e#1932#1961#0" expanded="true" />
@@ -1915,6 +1728,99 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26859504" vertical-offset="5" max-vertical-offset="570">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24793388" vertical-offset="0" max-vertical-offset="484">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21694215" vertical-offset="0" max-vertical-offset="484">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/wvumobilestyle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/offline.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/busstop.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/prt_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1185">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/wvumobile/wvumobile/BusActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.277174" vertical-offset="3375" max-vertical-offset="11835">
+          <caret line="1012" column="24" selection-start-line="1012" selection-start-column="24" selection-end-line="1012" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1069#1077#0" expanded="true" />
+            <element signature="method#hideExtraRows#0;class#BusActivity#0" expanded="false" />
+            <element signature="method#setUpBusStops#0;class#BusActivity#0" expanded="false" />
+            <element signature="e#21952#21996#0" expanded="true" />
+            <element signature="e#22440#22484#0" expanded="true" />
+            <element signature="e#23127#23171#0" expanded="true" />
+            <element signature="e#24068#24112#0" expanded="true" />
+            <element signature="e#24728#24772#0" expanded="true" />
+            <element signature="e#25492#25536#0" expanded="true" />
+            <element signature="e#26035#26079#0" expanded="true" />
+            <element signature="e#26617#26661#0" expanded="true" />
+            <element signature="e#27133#27177#0" expanded="true" />
+            <element signature="e#27611#27656#0" expanded="true" />
+            <element signature="e#28283#28328#0" expanded="true" />
+            <element signature="e#28797#28842#0" expanded="true" />
+            <element signature="e#29394#29439#0" expanded="true" />
+            <element signature="e#29942#29987#0" expanded="true" />
+            <element signature="e#30552#30597#0" expanded="true" />
+            <element signature="e#31408#31453#0" expanded="true" />
+            <element signature="e#32060#32105#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

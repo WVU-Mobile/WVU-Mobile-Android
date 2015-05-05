@@ -14,6 +14,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -47,8 +48,10 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
     private LatLng Willowdale = new LatLng(39.654949, -79.953311);
     private LatLng BoremanHall = new LatLng(39.633525, -79.953004);
     private LatLng WarnerTheatre = new LatLng(39.628942, -79.956950);
-    private LatLng WestoverPNR = new LatLng(39.631181, -79.97719);
-    private LatLng Kmart = new LatLng(39.630394, -80.001494);
+    private LatLng WestoverTriangle = new LatLng(39.634696, -79.969858);
+    private LatLng WestoverPNR = new LatLng(39.630772, -79.977013);
+    private LatLng WestoverTerminal = new LatLng(39.632375, -79.976530);
+    private LatLng TheCommons = new LatLng(39.630491, -80.001948);
     private LatLng MorgantownMallTheatre = new LatLng(39.627116, -79.999424);
     private LatLng PublicSafetyBuilding = new LatLng(39.629767, -79.954879);
 
@@ -59,15 +62,22 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
     private LatLng ValleyHealth = new LatLng(39.586802, -79.965975);
     private LatLng Walmart = new LatLng(39.578803, -79.959495);
     private LatLng DorseyKnobPark = new LatLng(39.597093, -79.958160);
+    private LatLng ShopNSave = new LatLng(39.633281, -79.981347);
+    private LatLng WestoverBP = new LatLng(39.631038, -79.984486);
+    private LatLng SuperKMart = new LatLng(39.630491, -80.001948);
+    private LatLng WestoverMcDonalds = new LatLng(39.630835, -79.984623);
+    private LatLng RingerLawOffice = new LatLng(39.632688, -79.981966);
+
 
     //Orange Line(4) locations
     private LatLng Westover = new LatLng(39.632384, -79.976609);
-    private LatLng MorgantownMall = new LatLng(39.627025, -79.996881);
+    private LatLng MorgantownMall = new LatLng(39.626963,-79.996891);
     private LatLng UniversityTownCentre = new LatLng(39.645563, -79.999281);
     private LatLng Towers = new LatLng(39.648975, -79.966346);
     private LatLng Beechurst = new LatLng(39.634675, -79.956430);
     private LatLng Downtown = new LatLng(39.632384, -79.976609);
     private LatLng SouthparkFirstWard = new LatLng(39.632384, -79.976609);
+    private LatLng MorgantownHighSchool = new LatLng(39.623727, -79.956456);
     private LatLng WhitePark = new LatLng(39.614337, -79.957809);
     private LatLng MountaineerMall = new LatLng(39.606411, -79.962235);
 
@@ -287,110 +297,78 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
             case 1:
                 //Campus PM (1)
                 setTitle("Campus PM (1)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
-                updateMarkers(busLine);
                 break;
             case 2:
                 //Downtown PM Mall (2)
                 setTitle("Downtown PM Mall (2)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 3:
                 //Green Line (3)
                 setTitle("Green Line (3)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 4:
                 //Orange Line (4)
                 setTitle("Orange Line (4)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 5:
                 //Gold Line (6)
                 setTitle("Gold Line (6)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 6:
                 //Red Line (7)
                 setTitle("Red Line (7)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 7:
                 //Tyrone (8)
                 setTitle("Tyrone (8)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 8:
                 //Purple Line (9)
                 setTitle("Purple Line (9)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 9:
                 //Cassville (11)
                 setTitle("Cassville (11)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 10:
                 //Blue Line (12)
                 setTitle("Blue Line (12)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 11:
                 //Crown (13)
                 setTitle("Crown (13)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 12:
                 //Mountain Heights (14)
                 setTitle("Mountain Heights (14)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 13:
                 //Grafton Road (15)
                 setTitle("Grafton Road (15)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 14:
                 //Pink Line (16)
                 setTitle("Pink Line (16)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 15:
                 //West Run (30)
                 setTitle("West Run (30)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 16:
                 //Blue & Gold(38)
                 setTitle("Blue & Gold (38)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             case 17:
                 //Valley View (44)
                 setTitle("Valley View (44)");
-                hideExtraRows(busLine);
-                setUpBusStops(busLine);
                 break;
             default:
                 break;
 
         }
+        hideExtraRows(busLine);
+        setUpBusStops(busLine);
+        updateMarkers(busLine);
 
 
     }
@@ -773,52 +751,269 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
     public void updateMarkers(int busID)
     {
 
+        if(!markers.isEmpty())
+        {
+            markers.clear();
+        }
         Marker marker;
         switch(busID)
         {
             case 1:
                 for(int i = 0; i<8; i++) {
                         if(i == 0) {
-                            marker = mMap.addMarker(new MarkerOptions().position(Fieldcrest).title("Fieldcrest"));
+                            marker = mMap.addMarker(new MarkerOptions().position(Fieldcrest).title("Fieldcrest").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                         if(i == 1) {
-                            marker = mMap.addMarker(new MarkerOptions().position(Ruby).title("Ruby"));
+                            marker = mMap.addMarker(new MarkerOptions().position(Ruby).title("Ruby").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));;
                             markers.add(marker);
                         }
                         if(i == 2) {
-                            marker = mMap.addMarker(new MarkerOptions().position(ValleyView).title("Valley View"));
+                            marker = mMap.addMarker(new MarkerOptions().position(ValleyView).title("Valley View").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                         if(i == 3) {
-                            marker = mMap.addMarker(new MarkerOptions().position(StewartST).title("Stewart Street"));
+                            marker = mMap.addMarker(new MarkerOptions().position(StewartST).title("Stewart Street").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                         if(i == 4) {
-                            marker = mMap.addMarker(new MarkerOptions().position(Sunnyside).title("Sunnyside"));
+                           marker = mMap.addMarker(new MarkerOptions().position(Sunnyside).title("Sunnyside").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                         if(i == 5) {
-                            marker = mMap.addMarker(new MarkerOptions().position(Mountainlair).title("Mountainlair"));
+                            marker = mMap.addMarker(new MarkerOptions().position(Mountainlair).title("Mountainlair").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                         if(i == 6) {
-                            marker = mMap.addMarker(new MarkerOptions().position(CourtHouse).title("Court House"));
+                            marker = mMap.addMarker(new MarkerOptions().position(CourtHouse).title("Court House").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                         if(i == 7) {
-                            marker = mMap.addMarker(new MarkerOptions().position(SpruceSt).title("Spruce St."));
+                            marker = mMap.addMarker(new MarkerOptions().position(SpruceSt).title("Spruce St.").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
                             markers.add(marker);
                         }
                     }
                 break;
             case 2:
+                for(int i = 0; i<11; i++) {
+                    if(i == 0) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Willowdale).title("Willowdale").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 1) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Sunnyside).title("Sunnyside").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 2) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Mountainlair).title("Mountainlair").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 3) {
+                        marker = mMap.addMarker(new MarkerOptions().position(BoremanHall).title("Boreman Hall").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 4) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WarnerTheatre).title("Warner Theatre").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 5) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverTriangle).title("Westover Triangle").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 6) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverPNR).title("Westover Park & Ride").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 7) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverTerminal).title("Westover Terminal").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 8) {
+                        marker = mMap.addMarker(new MarkerOptions().position(TheCommons).title("The Commons").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 9) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MorgantownMallTheatre).title("Morgantown Mall Theatre").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 10) {
+                        marker = mMap.addMarker(new MarkerOptions().position(PublicSafetyBuilding).title("Public Safety Building").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                }
                 break;
             case 3:
+                for(int i = 0; i<16; i++) {
+                    if(i == 0) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Depot).title("Depot").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 1) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Aldi).title("South U. Plaza/Aldi").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 2) {
+                        marker = mMap.addMarker(new MarkerOptions().position(BankMorgantownHotel).title("Bank Plaza/Morgantown Motel").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 3) {
+                        marker = mMap.addMarker(new MarkerOptions().position(RamadaInn).title("Ramada Inn").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 4) {
+                        marker = mMap.addMarker(new MarkerOptions().position(ValleyHealth).title("Valley Health").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 5) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Walmart).title("Walmart").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 6) {
+                        marker = mMap.addMarker(new MarkerOptions().position(DorseyKnobPark).title("Dorsey Knob Park").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 7) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverTriangle).title("Westover Triangle").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 8) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverPNR).title("Westover Park & Ride").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 9) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverTerminal).title("Westover Terminal").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 10) {
+                        marker = mMap.addMarker(new MarkerOptions().position(ShopNSave).title("Shop N Save").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 11) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverBP).title("Westover BP").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 12) {
+                        marker = mMap.addMarker(new MarkerOptions().position(SuperKMart).title("Super K-Mart").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 13) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MorgantownMall).title("Morgantown Mall").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 14) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestoverMcDonalds).title("Westover McDonalds").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if(i == 15) {
+                        marker = mMap.addMarker(new MarkerOptions().position(RingerLawOffice).title("Ringer Law Office").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                }
+                System.out.println("SIZE: "+markers.size());
                 break;
             case 4:
+                for(int i = 0; i<11; i++) {
+                    if (i == 0) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Depot).title("Depot").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 1) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Westover).title("Westover").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 2) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MorgantownMall).title("Morgantown Mall").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 3) {
+                        marker = mMap.addMarker(new MarkerOptions().position(UniversityTownCentre).title("University Town Centre").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 4) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Towers).title("Towers").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 5) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Beechurst).title("Beechurst").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 6) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Downtown).title("Downtown").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 7) {
+                        marker = mMap.addMarker(new MarkerOptions().position(SouthparkFirstWard).title("SouthPark 1st Ward").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 8) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MorgantownHighSchool).title("Morgantown High School").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 9) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WhitePark).title("White Park").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 10) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MountaineerMall).title("Mountaineer Mall").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                }
                 break;
             case 5:
+                for(int i = 0; i<13; i++) {
+                    if (i == 0) {
+                        marker = mMap.addMarker(new MarkerOptions().position(PublicSafetyBuilding).title("Public Safety Building").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 1) {
+                        marker = mMap.addMarker(new MarkerOptions().position(UnityManor).title("Unity Manor").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 2) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Mountainlair).title("Mountainlair").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 3) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Ruby).title("Ruby").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 4) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MountaineerStation).title("Mountaineer Station").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 5) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MedicalArts).title("Medical Arts").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 6) {
+                        marker = mMap.addMarker(new MarkerOptions().position(IndepHill).title("Independence Hill").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 7) {
+                        marker = mMap.addMarker(new MarkerOptions().position(NorthHills).title("North Hills").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 8) {
+                        marker = mMap.addMarker(new MarkerOptions().position(MonGeneral).title("Mon General").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 9) {
+                        marker = mMap.addMarker(new MarkerOptions().position(Towers).title("Towers").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 10) {
+                        marker = mMap.addMarker(new MarkerOptions().position(EMooreHall).title("E. Moore Hall").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 11) {
+                        marker = mMap.addMarker(new MarkerOptions().position(HighStreet).title("High Street").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                    if (i == 12) {
+                        marker = mMap.addMarker(new MarkerOptions().position(WestRunComplex).title("Villages at West Run").icon(BitmapDescriptorFactory.fromResource(R.drawable.busstop)));
+                        markers.add(marker);
+                    }
+                }
                 break;
             case 6:
                 break;
@@ -903,6 +1098,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
 
     public void moveToMarker(int loc)
     {
+        System.out.println("location is: "+loc);
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markers.get(loc).getPosition(), 13));
     }
     private void setUpMapIfNeeded()
@@ -954,5 +1150,6 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
     public void onDestroy() {
         mMapView.onDestroy();
         super.onDestroy();
+        markers.clear();
     }
 }
