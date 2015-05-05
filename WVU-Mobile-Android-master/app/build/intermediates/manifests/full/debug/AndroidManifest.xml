@@ -25,7 +25,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="wvumobile.wvumobile.MainActivity"
-            android:label="MENU"
+            android:label="WVU Mobile"
             android:theme="@style/MainBarTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,8 +35,9 @@
         </activity>
         <activity
             android:name="wvumobile.wvumobile.DiningActivity"
-            android:label="@string/title_activity_dining" >
-
+            android:label="@string/title_activity_dining"
+            android:theme="@style/MainBarTheme" >
+>
             <!--
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -46,7 +47,9 @@
         </activity>
         <activity
             android:name="wvumobile.wvumobile.BusActivity"
-            android:label="@string/title_activity_bus" >
+            android:label="@string/title_activity_bus"
+            android:theme="@style/MainBarTheme" >
+>
         </activity>
 
         <meta-data

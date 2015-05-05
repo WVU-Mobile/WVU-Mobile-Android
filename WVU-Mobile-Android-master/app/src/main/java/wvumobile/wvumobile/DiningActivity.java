@@ -137,7 +137,6 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
             jsonURL = intent.getStringExtra(dining_Fragment.EXTRA_MESSAGE);
             locationID = intent.getIntExtra(dining_Fragment.EXTRA_MESSAGE2, 0);
 
-            System.out.println("Location ID: "+locationID);
             JSONParser jParse = new JSONParser();
 
 

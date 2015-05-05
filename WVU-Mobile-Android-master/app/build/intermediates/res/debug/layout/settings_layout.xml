@@ -154,53 +154,6 @@
                 android:layout_marginRight="10dp" />
         </TableRow>
         <TableRow
-            android:layout_width="wrap_content"
-            android:paddingBottom="1dp"
-            android:background="@color/ColorWhite"
-            android:layout_marginLeft="10dp" />
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Corey"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/CellBlue"
-                android:lines="2"
-                android:gravity="center_vertical|left"
-                android:layout_marginLeft="10dp" />
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/follow"
-                android:scaleType="fitEnd"
-                android:layout_marginLeft="125dp"
-                android:layout_marginRight="10dp" />
-        </TableRow>
-        <TableRow
-            android:layout_width="wrap_content"
-            android:paddingBottom="1dp"
-            android:background="@color/ColorWhite"
-            android:layout_marginLeft="10dp" />
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/CellBlue"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Thomas"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/CellBlue"
-                android:lines="2"
-                android:gravity="center_vertical|left"
-                android:layout_marginLeft="10dp" />
-        </TableRow>
-        <TableRow
             android:paddingBottom="1dp"
             android:background="@color/ColorWhite"/>
         <TableRow

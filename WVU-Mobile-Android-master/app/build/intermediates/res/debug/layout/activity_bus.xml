@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <com.google.android.gms.maps.MapView
+    android:id="@+id/b_map"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+/>
+
+    <ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:scrollbars="none"
     android:layout_weight="1"
     android:nestedScrollingEnabled="true"
     android:background="@color/DarkestBlueColor"
-    tools:context="wvumobile.wvumobile.BusActivity">
+    tools:context="wvumobile.wvumobile.BusActivity"
+    android:fillViewport="true">
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -17,15 +28,17 @@
         android:clickable="false"
         android:background="@color/DarkestBlueColor"
         android:stretchColumns="1">
-        <TableRow
+        <!--<TableRow
             android:id="@+id/b_mapRow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <com.google.android.gms.maps.MapView
-                android:id="@+id/b_map"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"/>
-        </TableRow>
+                android:id="@+id/bd_map"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_span="2"
+                android:layout_weight="1.0" />
+        </TableRow> -->
         <TableRow
             android:id="@+id/b_hoursRow"
             android:layout_width="wrap_content"
@@ -49,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_1"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false">
 
@@ -62,6 +75,7 @@
                 android:adjustViewBounds="false"
                 android:baselineAlignBottom="false"
                 android:focusable="false"
+                android:layout_gravity="left"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -79,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_2"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false">
 
@@ -91,6 +105,8 @@
                 android:cropToPadding="false"
                 android:adjustViewBounds="false"
                 android:baselineAlignBottom="false"
+                android:layout_column="0"
+                android:layout_gravity="left"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -108,7 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_3"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -136,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_4"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -164,7 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_5"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -192,7 +208,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_6"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -220,7 +236,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_7"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -248,7 +264,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_8"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -276,7 +292,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_9"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -304,7 +320,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:id="@+id/bloc_10"
-            android:background="@drawable/drawer_list_selector"
+            android:background="@drawable/drawer_list_selector2"
             android:clickable="true"
             android:nestedScrollingEnabled="false"
             android:gravity="start">
@@ -328,7 +344,176 @@
                 android:gravity="center_vertical"
                 android:id="@+id/b_text10" />
         </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bloc_11"
+            android:background="@drawable/drawer_list_selector2"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:gravity="start">
+            <ImageView
+                android:src="@drawable/dstops"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busPlaceholderLocation"
+                android:textColor="@color/ColorGold"
+                android:textSize="17sp"
+                android:paddingLeft="30dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:id="@+id/b_text11" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bloc_12"
+            android:background="@drawable/drawer_list_selector2"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:gravity="start">
+            <ImageView
+                android:src="@drawable/dstops"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busPlaceholderLocation"
+                android:textColor="@color/ColorGold"
+                android:textSize="17sp"
+                android:paddingLeft="30dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:id="@+id/b_text12" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bloc_13"
+            android:background="@drawable/drawer_list_selector2"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:gravity="start">
+            <ImageView
+                android:src="@drawable/dstops"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busPlaceholderLocation"
+                android:textColor="@color/ColorGold"
+                android:textSize="17sp"
+                android:paddingLeft="30dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:id="@+id/b_text13" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bloc_14"
+            android:background="@drawable/drawer_list_selector2"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:gravity="start">
+            <ImageView
+                android:src="@drawable/dstops"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busPlaceholderLocation"
+                android:textColor="@color/ColorGold"
+                android:textSize="17sp"
+                android:paddingLeft="30dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:id="@+id/b_text14" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bloc_15"
+            android:background="@drawable/drawer_list_selector2"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:gravity="start">
+            <ImageView
+                android:src="@drawable/dstops"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busPlaceholderLocation"
+                android:textColor="@color/ColorGold"
+                android:textSize="17sp"
+                android:paddingLeft="30dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:id="@+id/b_text15" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bloc_16"
+            android:background="@drawable/drawer_list_selector2"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:gravity="start">
+            <ImageView
+                android:src="@drawable/dstops"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busPlaceholderLocation"
+                android:textColor="@color/ColorGold"
+                android:textSize="17sp"
+                android:paddingLeft="30dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:id="@+id/b_text16" />
+        </TableRow>
 
     </TableLayout>
 </ScrollView>
+</LinearLayout>
 <!-- From: file:/Users/jeremydole/AndroidStudioProjects/WVU-Mobile-Android-master/app/src/main/res/layout/activity_bus.xml -->

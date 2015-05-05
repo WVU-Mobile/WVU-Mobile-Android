@@ -67,6 +67,7 @@ public class prt_Fragment extends Fragment
                     status.setTextColor(getResources().getColor(R.color.ColorGreen));
                     Drawable check = getResources().getDrawable(R.drawable.check);
                     img.setImageDrawable(check);
+                    img.setBackgroundColor(getResources().getColor(R.color.ColorGreen));
                     row.setBackgroundColor(getResources().getColor(R.color.ColorGreen));
                     break;
                 case 2: case 5: case 6: case 10:
@@ -74,6 +75,7 @@ public class prt_Fragment extends Fragment
                     status.setTextColor(getResources().getColor(R.color.ColorOrange));
                     Drawable yield = getResources().getDrawable(R.drawable.yield);
                     img.setImageDrawable(yield);
+                    img.setBackgroundColor(getResources().getColor(R.color.ColorOrange));
                     row.setBackgroundColor(getResources().getColor(R.color.ColorOrange));
 
                 break;
@@ -82,6 +84,7 @@ public class prt_Fragment extends Fragment
                     status.setTextColor(getResources().getColor(R.color.ColorPink));
                     Drawable stop = getResources().getDrawable(R.drawable.stop);
                     img.setImageDrawable(stop);
+                    img.setBackgroundColor(getResources().getColor(R.color.ColorPink));
                     row.setBackgroundColor(getResources().getColor(R.color.ColorPink));
                 break;
                 default:

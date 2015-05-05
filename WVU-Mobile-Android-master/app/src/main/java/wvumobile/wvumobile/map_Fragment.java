@@ -1,6 +1,8 @@
 package wvumobile.wvumobile;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -225,6 +227,10 @@ public class map_Fragment extends android.support.v4.app.Fragment implements  Vi
         {
             //do something
         }*/
+
+        ActionBar actionBar = ((ActionBarActivity)getActivity()).getSupportActionBar();
+        actionBar.setTitle("Map");
+
         mMapView = (MapView) rootView.findViewById(R.id.WVUmap);
         mMapView.onCreate(mBundle);
 
