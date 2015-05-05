@@ -291,6 +291,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
 
             if(locationID == 1)
             {
+                setTitle("Cafe Evansdale");
                 diningHallTitle = "Cafe Evansdale";
                 updateMap(cafeEvansdalelatlon, diningHallTitle);
                 dDescriptionText.setText(getResources().getText(R.string.cafeevansdaleDescription));
@@ -298,6 +299,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
             }
             else if(locationID == 2)
             {
+                setTitle("Summit Cafe");
                 diningHallTitle = "Summit Cafe";
                 updateMap(summitCafelatlon, diningHallTitle);
                 dDescriptionText.setText(getResources().getText(R.string.summitcafeDescription));
@@ -305,6 +307,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
             }
             else if(locationID == 3)
             {
+                setTitle("Arnold's Diner");
                 diningHallTitle = "Arnold's Diner";
                 updateMap(arnoldsDinerlatlon, diningHallTitle);
                 dDescriptionText.setText(getResources().getText(R.string.arnoldsdinerDescription));
@@ -312,6 +315,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
             }
             else if(locationID == 4)
             {
+                setTitle("Boreman Bistro");
                 diningHallTitle = "Boreman Bistro";
                 updateMap(boremanBistrolatlon, diningHallTitle);
                 dDescriptionText.setText(getResources().getText(R.string.boremanbistroDescription));
@@ -319,6 +323,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
             }
             else if(locationID == 5)
             {
+                setTitle("Terrace Room");
                 diningHallTitle = "Terrace Room";
                 updateMap(terraceRoomlatlon, diningHallTitle);
                 dDescriptionText.setText(getResources().getText(R.string.terraceroomDescription));
@@ -326,6 +331,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
             }
             else if(locationID == 6)
             {
+                setTitle("Hatfields");
                 diningHallTitle = "Hatfields";
                 updateMap(hatfieldslatlon, diningHallTitle);
                 dDescriptionText.setText(getResources().getText(R.string.hatfieldsDescription));
@@ -444,24 +450,42 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
         dHoursRow.setVisibility(View.GONE);
 
         //making all menu rows visible
-        breakfastTitle.setVisibility(View.VISIBLE);
-        h_breakfastTitle.setVisibility(View.VISIBLE);
-        breakfastASTitle.setVisibility(View.VISIBLE);
-        lunchTitle.setVisibility(View.VISIBLE);
-        h_lunchTitle.setVisibility(View.VISIBLE);
-        lunchASTitle.setVisibility(View.VISIBLE);
-        dinnerTitle.setVisibility(View.VISIBLE);
-        h_dinnerTitle.setVisibility(View.VISIBLE);
-        dinnerASTitle.setVisibility(View.VISIBLE);
-        breakfastRow.setVisibility(View.VISIBLE);
-        h_breakfastRow.setVisibility(View.VISIBLE);
-        breakfastASRow.setVisibility(View.VISIBLE);
-        lunchRow.setVisibility(View.VISIBLE);
-        h_lunchRow.setVisibility(View.VISIBLE);
-        lunchASRow.setVisibility(View.VISIBLE);
-        dinnerRow.setVisibility(View.VISIBLE);
-        h_dinnerRow.setVisibility(View.VISIBLE);
-        dinnerASRow.setVisibility(View.VISIBLE);
+        if(!breakfastItems.equals("")) {
+            breakfastTitle.setVisibility(View.VISIBLE);
+            breakfastRow.setVisibility(View.VISIBLE);
+        }
+        if(!h_breakfastItems.equals("")){
+            h_breakfastTitle.setVisibility(View.VISIBLE);
+            h_breakfastRow.setVisibility(View.VISIBLE);
+        }
+        if(!breakfastASItems.equals("")){
+            breakfastASTitle.setVisibility(View.VISIBLE);
+            breakfastASRow.setVisibility(View.VISIBLE);
+        }
+        if(!lunchItems.equals("")){
+            lunchTitle.setVisibility(View.VISIBLE);
+            lunchRow.setVisibility(View.VISIBLE);
+        }
+        if(!h_lunchItems.equals("")){
+            h_lunchTitle.setVisibility(View.VISIBLE);
+            h_lunchRow.setVisibility(View.VISIBLE);
+        }
+        if(!lunchASItems.equals("")){
+            lunchASTitle.setVisibility(View.VISIBLE);
+            lunchASRow.setVisibility(View.VISIBLE);
+        }
+        if(!dinnerItems.equals("")){
+            dinnerTitle.setVisibility(View.VISIBLE);
+            dinnerRow.setVisibility(View.VISIBLE);
+        }
+        if(!h_dinnerItems.equals("")){
+            h_dinnerTitle.setVisibility(View.VISIBLE);
+            h_dinnerRow.setVisibility(View.VISIBLE);
+        }
+        if(!dinnerASItems.equals("")){
+            dinnerASTitle.setVisibility(View.VISIBLE);
+            dinnerASRow.setVisibility(View.VISIBLE);
+        }
     }
 
     public void setUpInfoView()

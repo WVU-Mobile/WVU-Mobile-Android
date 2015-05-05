@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TableRow;
 import android.widget.TextView;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -18,14 +17,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.Map;
-
 
 public class BusActivity extends ActionBarActivity implements View.OnClickListener {
 
@@ -173,7 +165,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
     //Blue and Gold (38) locations
     private LatLng TowersPRT = new LatLng(39.647558, -79.967770);
     private LatLng Oakland = new LatLng(39.649394, -79.964124);
-    private LatLng GrantAtSixth = new LatLng(39.642266, -79.960103);
+    //private LatLng GrantAtSixth = new LatLng(39.642266, -79.960103);
     private LatLng GrantAtFourth = new LatLng(39.640934, -79.958061);
     private LatLng LifeSciences = new LatLng(39.638069, -79.956017);
     private LatLng CAC = new LatLng(39.647032, -79.974160);
@@ -221,11 +213,6 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
     private TextView b_txt14;
     private TextView b_txt15;
     private TextView b_txt16;
-
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -374,6 +361,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
 
 
     }
+
     public void hideExtraRows(int rowID)
     {
         switch(rowID)
@@ -516,6 +504,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
                 break;
         }
     }
+
     public void setUpBusStops(int rowID)
     {
         switch(rowID)
@@ -750,6 +739,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
 
         }
     }
+
     public void updateMarkers(int busID)
     {
 
@@ -1515,6 +1505,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
                 break;
         }
     }
+
     public void onClick(View v)
     {
         switch(v.getId())
@@ -1572,9 +1563,9 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
 
     public void moveToMarker(int loc)
     {
-        System.out.println("location is: "+loc);
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markers.get(loc).getPosition(), 13));
     }
+
     private void setUpMapIfNeeded()
     {
         if(mMap == null)
@@ -1586,10 +1577,12 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
             }
         }
     }
+
     private void setUpMap()
     {
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(39.6424938, -79.9515335), 12));
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -1608,6 +1601,7 @@ public class BusActivity extends ActionBarActivity implements View.OnClickListen
 
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public void onResume() {
         super.onResume();
