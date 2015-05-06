@@ -9,8 +9,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:stretchColumns="*"
-        android:background="@color/DarkestBlueColor">
+        android:stretchColumns="*">
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
@@ -31,13 +30,13 @@
         <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/CellBlue">
+        android:background="@drawable/help_selector"
+        android:id="@+id/h_row1">
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Morgantown Police"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/CellBlue"
             android:lines="2"
             android:gravity="center_vertical|left"
             android:layout_marginLeft="10dp" />
@@ -46,7 +45,6 @@
             android:text="(304)284-7522"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/CellBlue"
             android:lines="2"
             android:gravity="center_vertical|right"
             android:layout_marginRight="10dp" />
@@ -59,13 +57,13 @@
      <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row2">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="University Police"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -74,7 +72,6 @@
                 android:text="(304)293-2677"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp"/>
@@ -87,13 +84,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row3">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="WVU Emergency"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -102,7 +99,6 @@
                 android:text="1-800-988-0096"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp" />
@@ -145,13 +141,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row4">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Information Center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -160,7 +156,6 @@
                 android:text="(304) 292-5100"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp"/>
@@ -189,13 +184,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row5">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="24/7 Hotline"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -204,7 +199,6 @@
                 android:text="1-800-784-2433"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp" />
@@ -217,13 +211,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row6">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Veterans Hotline"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -232,7 +226,6 @@
                 android:text="1-800-273-TALK"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp"/>
@@ -275,13 +268,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row7">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Carruth Center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -290,7 +283,6 @@
                 android:text="(304) 293-6997"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp" />
@@ -333,13 +325,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row8">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Environmental Health"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -348,7 +340,6 @@
                 android:text="(304)293-3792"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp" />
@@ -361,13 +352,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row9">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Health Sciences"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -376,7 +367,6 @@
                 android:text="(304)293-6924"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp"/>
@@ -389,13 +379,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row10">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Faculty-Staff Assit."
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -404,7 +394,6 @@
                 android:text="(304)293-5590"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp" />
@@ -417,13 +406,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row11">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Parents Club"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -432,7 +421,6 @@
                 android:text="1-800-WVU-0096"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp"/>
@@ -445,13 +433,13 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/CellBlue">
+            android:background="@drawable/help_selector"
+            android:id="@+id/h_row12">
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Student Health"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|left"
                 android:layout_marginLeft="10dp" />
@@ -460,7 +448,6 @@
                 android:text="(304)285-7200"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/CellBlue"
                 android:lines="2"
                 android:gravity="center_vertical|right"
                 android:layout_marginRight="10dp"/>
