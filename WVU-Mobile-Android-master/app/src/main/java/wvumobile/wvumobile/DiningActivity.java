@@ -340,7 +340,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_dining, menu);
@@ -360,7 +360,7 @@ public class DiningActivity extends ActionBarActivity implements  View.OnClickLi
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
     public void setupMenu(JSONObject[] dJson) throws JSONException
     {
         String placeholder;
