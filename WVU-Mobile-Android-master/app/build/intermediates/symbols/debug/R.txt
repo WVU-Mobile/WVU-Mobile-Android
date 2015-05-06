@@ -565,7 +565,7 @@ int id VNG 0x7f090130
 int id WDB 0x7f090131
 int id WHI 0x7f090132
 int id WVUmap 0x7f0900d6
-int id action_back 0x7f090151
+int id action_back 0x7f090157
 int id action_bar 0x7f090045
 int id action_bar_activity_content 0x7f090000
 int id action_bar_container 0x7f090044
@@ -574,13 +574,13 @@ int id action_bar_spinner 0x7f090001
 int id action_bar_subtitle 0x7f090033
 int id action_bar_title 0x7f090032
 int id action_context_bar 0x7f090046
-int id action_example 0x7f090150
+int id action_example 0x7f090156
 int id action_menu_divider 0x7f090002
 int id action_menu_presenter 0x7f090003
 int id action_mode_bar 0x7f090042
 int id action_mode_bar_stub 0x7f090041
 int id action_mode_close_button 0x7f090034
-int id action_settings 0x7f09014f
+int id action_settings 0x7f090155
 int id activity_chooser_view_content 0x7f090035
 int id adjust_height 0x7f090016
 int id adjust_width 0x7f090017
@@ -688,9 +688,11 @@ int id donate_with_google 0x7f09002e
 int id drawer_layout 0x7f09009d
 int id dropdown 0x7f090021
 int id edit_query 0x7f090047
+int id email_row 0x7f090153
 int id end 0x7f090014
 int id expand_activities_button 0x7f090036
 int id expanded_menu 0x7f09003c
+int id f_button 0x7f090151
 int id grayscale 0x7f090030
 int id h_row1 0x7f0900c6
 int id h_row10 0x7f0900cf
@@ -714,6 +716,8 @@ int id icon 0x7f09003a
 int id ifRoom 0x7f09001d
 int id image 0x7f090037
 int id imageView 0x7f0900c3
+int id j_button 0x7f090150
+int id k_button 0x7f09014e
 int id left_drawer 0x7f0900c5
 int id listMode 0x7f090009
 int id list_item 0x7f090039
@@ -725,7 +729,7 @@ int id map_mapButton 0x7f0900d3
 int id match_parent 0x7f09002a
 int id middle 0x7f090015
 int id monochrome 0x7f090031
-int id myTitle 0x7f09014e
+int id myTitle 0x7f090154
 int id n_item1 0x7f090136
 int id n_item1_title 0x7f090138
 int id n_item2 0x7f090139
@@ -763,6 +767,7 @@ int id r_breakfast 0x7f09007c
 int id r_breakfast_as 0x7f090082
 int id r_breakfast_astitle 0x7f090081
 int id r_breakfasttitle 0x7f09007b
+int id r_button 0x7f09014f
 int id r_dinner 0x7f09008e
 int id r_dinner_as 0x7f090094
 int id r_dinner_astitle 0x7f090093
@@ -800,6 +805,7 @@ int id split_action_bar 0x7f090007
 int id strict_sandbox 0x7f090027
 int id submit_area 0x7f090050
 int id summitcafeimage 0x7f0900b9
+int id t_button 0x7f090152
 int id tabMode 0x7f09000b
 int id terraceroomimage 0x7f0900bf
 int id terrain 0x7f09001a
