@@ -122,29 +122,21 @@ public class help_Fragment extends Fragment implements  View.OnClickListener
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         alertDialog = builder.create();
         alertDialog.setOnDismissListener(new onDismissListener());
-
         alertDialog.setMessage("Are you sure you want to call "+message+"?");
         alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE,"Cancel", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton)
-            {
-
+            public void onClick(DialogInterface dialog, int whichButton){
             }
-
         });
-        alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Call", new DialogInterface.OnClickListener()
-        {
-            public void onClick(DialogInterface dialog, int whichButton)
-            {
+        alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Call", new DialogInterface.OnClickListener(){
+            public void onClick(DialogInterface dialog, int whichButton){
                 Intent phoneIntent = new Intent(Intent.ACTION_CALL);
                 phoneIntent.setData(Uri.parse(number));
                 try{
                     startActivity(phoneIntent);
                 }
-                catch(ActivityNotFoundException e)
-                {
+                catch(ActivityNotFoundException e){
                     Toast.makeText(getActivity(), "Call failed, please try again later.", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
         alertDialog.show();
